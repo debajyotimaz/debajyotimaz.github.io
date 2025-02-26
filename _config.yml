@@ -3,10 +3,10 @@
 # -----------------------------------------------------------------------------
 
 title: blank # the website title (if blank, full name will be used instead)
-first_name: Zhongzhan
+first_name: Debajyoti
 middle_name: 
-last_name: Huang (黄中展)
-email: zhongzhanhuang@foxmail.com
+last_name: Mazumder
+email: debajyotimaz@gmail.com
 logo: /assets/logo_.JPG
 remote_theme: pages-themes/minimal@v0.2.0
 plugins:
