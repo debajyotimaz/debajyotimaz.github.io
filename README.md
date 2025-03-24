@@ -9,4 +9,3 @@
 
 **Contact:** debajyotimaz [at] gmail [dot] com
 
-I want to add the news and publication section into this website.
