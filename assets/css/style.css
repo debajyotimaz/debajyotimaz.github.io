@@ -1,0 +1,19 @@
+// Custom publications styling
+.publication {
+  margin-bottom: 1.5em;
+  line-height: 1.6;
+}
+.publication a {
+  color: #0366d6; // GitHub link blue
+  text-decoration: none;
+}
+.publication a:hover {
+  text-decoration: underline;
+}
+
+.site-nav {
+  float: right;
+  .page-link {
+    margin-left: 20px;
+  }
+}

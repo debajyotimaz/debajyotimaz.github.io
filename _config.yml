@@ -49,3 +49,13 @@ collections:
   news:
     output: true
     permalink: /news/:path/
+    
+# Navigation links
+navbar:
+  links:
+    - name: "Home"
+      url: /
+    - name: "News"
+      url: /news
+    - name: "Publications"
+      url: /publications

@@ -1,0 +1,15 @@
+<header class="site-header">
+  <div class="wrapper">
+    <a class="site-title" href="{{ '/' | relative_url }}">
+      <img src="{{ site.logo | relative_url }}" alt="Logo" style="height: 40px; vertical-align: middle;">
+      {{ site.title }}
+    </a>
+    <nav class="site-nav">
+      <div class="trigger">
+        {% for link in site.navbar.links %}
+          <a class="page-link" href="{{ link.url | relative_url }}">{{ link.name }}</a>
+        {% endfor %}
+      </div>
+    </nav>
+  </div>
+</header>
