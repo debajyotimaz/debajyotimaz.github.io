@@ -26,3 +26,26 @@ plugins:
 # -----------------------------------------------------------------------------
 
 scholar_userid: R-b68CEAAAAJ #0htBiCEAAAAJ # your Google Scholar ID
+
+# -----------------------------------------------------------------------------
+# Publications
+# -----------------------------------------------------------------------------
+scholar:
+  style: apa
+  locale: en
+
+  bibliography: publications
+  bibliography_template: "{{reference}}"
+
+  replace_strings: true
+  details_dir: bibliography
+  details_layout: bibtex.html
+  details_link: Details
+
+# -----------------------------------------------------------------------------
+# News
+# -----------------------------------------------------------------------------
+collections:
+  news:
+    output: true
+    permalink: /news/:path/
