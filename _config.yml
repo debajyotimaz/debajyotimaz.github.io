@@ -7,6 +7,7 @@ email: debajyotimaz@gmail.com
 logo: /assets/logo_.JPG
 remote_theme: pages-themes/minimal@v0.2.0
 plugins:
+<<<<<<< HEAD
   - jekyll-remote-theme # add this line to the plugins list if you already have one
   - jekyll-archives
   - jekyll-diagrams
@@ -59,3 +60,6 @@ navbar:
       url: /news
     - name: "Publications"
       url: /publications
+=======
+- jekyll-remote-theme # add this line to the plugins list if you already have one
+>>>>>>> parent of 6bddcc6 (Update _config.yml)
