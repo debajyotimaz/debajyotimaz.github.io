@@ -1,664 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Portfolio</title>
-    <style>
-        :root {
-            --primary-color: #004d40;
-            --secondary-color: #00796b;
-            --text-color: #f5f5f5;
-            --accent-color: #26a69a;
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        
-        body {
-            background-color: #f5f5f5;
-            color: #333;
-        }
-        
-        .dark-mode {
-            background-color: #121212;
-            color: #f5f5f5;
-        }
-        
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem 2rem;
-            background-color: #fff;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-        
-        .dark-mode nav {
-            background-color: #1e1e1e;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-        }
-        
-        .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
-        
-        .nav-links {
-            display: flex;
-            gap: 1.5rem;
-        }
-        
-        .nav-links a {
-            text-decoration: none;
-            color: #333;
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-        
-        .dark-mode .nav-links a {
-            color: #f5f5f5;
-        }
-        
-        .nav-links a:hover {
-            color: var(--accent-color);
-        }
-        
-        .nav-icons {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-        }
-        
-        .nav-icons button {
-            background: none;
-            border: none;
-            cursor: pointer;
-            font-size: 1.2rem;
-        }
-        
-        .hero {
-            background-color: var(--primary-color);
-            color: var(--text-color);
-            padding: 3rem 2rem;
-            display: flex;
-            align-items: center;
-            gap: 2rem;
-        }
-        
-        .profile-container {
-            position: relative;
-            width: 200px;
-            height: 200px;
-        }
-        
-        .profile-img {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 4px solid var(--text-color);
-        }
-        
-        .name-card {
-            background-color: rgba(0, 0, 0, 0.7);
-            padding: 1rem;
-            border-radius: 5px;
-            text-align: center;
-            margin-top: 1rem;
-            width: 200px;
-        }
-        
-        .chinese-name {
-            font-size: 1.8rem;
-            margin-bottom: 0.5rem;
-        }
-        
-        .title {
-            font-size: 1rem;
-            margin-bottom: 0.5rem;
-        }
-        
-        .social-icons {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-            margin-top: 1rem;
-        }
-        
-        .social-icons a {
-            color: var(--text-color);
-            font-size: 1.2rem;
-            transition: color 0.3s;
-        }
-        
-        .social-icons a:hover {
-            color: var(--accent-color);
-        }
-        
-        .hero-content {
-            flex: 1;
-        }
-        
-        .hero-title {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-        }
-        
-        .hero-text {
-            line-height: 1.6;
-            margin-bottom: 1.5rem;
-        }
-        
-        .download-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            background-color: rgba(0, 0, 0, 0.3);
-            color: var(--text-color);
-            border: none;
-            padding: 0.7rem 1.2rem;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-            text-decoration: none;
-        }
-        
-        .download-btn:hover {
-            background-color: rgba(0, 0, 0, 0.5);
-        }
-        
-        .sections {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2rem;
-            padding: 2rem;
-        }
-        
-        .section {
-            background-color: #fff;
-            padding: 1.5rem;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-        
-        .dark-mode .section {
-            background-color: #1e1e1e;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-        }
-        
-        .section-title {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-            color: var(--primary-color);
-        }
-        
-        .dark-mode .section-title {
-            color: var(--accent-color);
-        }
-        
-        .interests-list {
-            list-style-type: none;
-        }
-        
-        .interests-list li {
-            margin-bottom: 0.8rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-        
-        .education-item {
-            display: flex;
-            align-items: flex-start;
-            gap: 1rem;
-            margin-bottom: 1.2rem;
-        }
-        
-        .education-icon {
-            font-size: 1.5rem;
-            color: var(--secondary-color);
-        }
-        
-        .dark-mode .education-icon {
-            color: var(--accent-color);
-        }
-        
-        .education-details h3 {
-            margin-bottom: 0.3rem;
-        }
-        
-        .education-details p {
-            color: #666;
-            font-size: 0.9rem;
-        }
-        
-        .dark-mode .education-details p {
-            color: #bbb;
-        }
-        
-        .projects-section {
-            grid-column: 1 / span 2;
-            background-color: #fff;
-            padding: 1.5rem;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-        
-        .dark-mode .projects-section {
-            background-color: #1e1e1e;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-        }
-        
-        .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 1.5rem;
-            margin-top: 1.5rem;
-        }
-        
-        .project-card {
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            overflow: hidden;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-        
-        .dark-mode .project-card {
-            border: 1px solid #333;
-        }
-        
-        .project-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-        }
-        
-        .dark-mode .project-card:hover {
-            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-        }
-        
-        .project-img {
-            width: 100%;
-            height: 180px;
-            object-fit: cover;
-        }
-        
-        .project-content {
-            padding: 1rem;
-        }
-        
-        .project-title {
-            font-size: 1.1rem;
-            margin-bottom: 0.5rem;
-            color: var(--primary-color);
-        }
-        
-        .dark-mode .project-title {
-            color: var(--accent-color);
-        }
-        
-        .project-desc {
-            font-size: 0.9rem;
-            margin-bottom: 0.8rem;
-            color: #666;
-        }
-        
-        .dark-mode .project-desc {
-            color: #bbb;
-        }
-        
-        .project-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-        }
-        
-        .project-tag {
-            background-color: #f0f0f0;
-            color: #444;
-            padding: 0.2rem 0.5rem;
-            border-radius: 3px;
-            font-size: 0.8rem;
-        }
-        
-        .dark-mode .project-tag {
-            background-color: #333;
-            color: #ddd;
-        }
-        
-        footer {
-            background-color: var(--primary-color);
-            color: var(--text-color);ificial i
-            text-align: center;
-            padding: 2rem;
-            margin-top: 2rem;
-        }
-        
-        .footer-links {
-            display: flex;
-            justify-content: center;
-            gap: 1.5rem;
-            margin: 1rem 0;
-        }
-        
-        .footer-links a {
-            color: var(--text-color);
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-        
-        .footer-links a:hover {
-            color: var(--accent-color);
-        }
-        
-        @media (max-width: 768px) {
-            .hero {
-                flex-direction: column;
-                text-align: center;
-            }
-            
-            .sections {
-                grid-template-columns: 1fr;
-            }
-            
-            .projects-section {
-                grid-column: 1;
-            }
-            
-            .nav-links {
-                display: none;
-            }
-        }
-    </style>
-     <style>
-        .profile-section {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 1.5rem;
-            padding: 1.5rem;
-            max-width: 320px;
-        }
-        
-        .profile-container {
-            position: relative;
-            width: 220px;
-            height: 220px;
-        }
-        
-        .profile-img {
-            width: 100%;
-            height: 100%;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 4px solid var(--text-color);
-            transition: transform 0.3s ease;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-        }
-        
-        .profile-img:hover {
-            transform: scale(1.05);
-        }
-        
-        .profile-border {
-            position: absolute;
-            top: -8px;
-            left: -8px;
-            right: -8px;
-            bottom: -8px;
-            border-radius: 50%;
-            border: 2px solid var(--accent-color);
-            opacity: 0.6;
-            pointer-events: none;
-            animation: pulse 2s infinite;
-        }
-        
-        @keyframes pulse {
-            0% { transform: scale(1); opacity: 0.6; }
-            50% { transform: scale(1.05); opacity: 0.3; }
-            100% { transform: scale(1); opacity: 0.6; }
-        }
-        
-        .name-card {
-            background: linear-gradient(145deg, rgba(0, 77, 64, 0.9), rgba(0, 121, 107, 0.8));
-            padding: 1.5rem;
-            border-radius: 12px;
-            text-align: center;
-            width: 100%;
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-            backdrop-filter: blur(5px);
-            transition: transform 0.3s ease;
-        }
-        
-        .name-card:hover {
-            transform: translateY(-5px);
-        }
-        
-        .name {
-            font-size: 2rem;
-            font-weight: 700;
-            margin-bottom: 0.8rem;
-            letter-spacing: 0.5px;
-            color: white;
-        }
-        
-        .role, .affiliation {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 0.5rem;
-            margin-bottom: 0.7rem;
-        }
-        
-        .role-icon, .org-icon {
-            font-size: 1.2rem;
-        }
-        
-        .title, .company {
-            font-size: 1.1rem;
-            font-weight: 500;
-            color: rgba(255, 255, 255, 0.9);
-        }
-        
-        .social-icons {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-            margin-top: 1.2rem;
-        }
-        
-        .social-icon {
-            color: var(--text-color);
-            font-size: 1.3rem;
-            background-color: rgba(255, 255, 255, 0.15);
-            width: 36px;
-            height: 36px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 50%;
-            transition: all 0.3s ease;
-        }
-        
-        .social-icon:hover {
-            color: var(--primary-color);
-            background-color: white;
-            transform: translateY(-3px);
-        }
-        
-        @media (max-width: 768px) {
-            .profile-section {
-                padding: 1rem;
-            }
-            
-            .profile-container {
-                width: 180px;
-                height: 180px;
-            }
-            
-            .name {
-                font-size: 1.7rem;
-            }
-            
-            .title, .company {
-                font-size: 1rem;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Debajyoti Mazumder | NLP Researcher</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <nav>
-        <div class="logo">
-            <a href="https://debajyotimaz.github.io/" style="text-decoration: none; color: inherit;">Debajyoti Mazumder</a>
-        </div>
-       
-        <div class="nav-icons">
-            <div class="nav-links">
-<!--                 <a href="Bio.html">Bio</a> -->
-                <a href="publication.html">Publications</a>
-<!--                 <a href="#talks">Talks</a> -->
-                <a href="#news">News</a>
-                <a href="#experience">Experience</a>
-                <a href="#projects">Projects</a>
-                <a href="#teaching">Teaching</a>
-            </div>
-            <button></button>
-            <button></button>
-<!--             <button id="search-btn">🔍</button> -->
-            <button id="theme-toggle">🌙</button>
-        </div>
-    </nav>
-    
-    <section class="hero">
-        <div class="profile-section">
-            <div class="profile-container">
-                <img src="profile_image.jpg" alt="Profile" class="profile-img">
-                <div class="profile-border"></div>
-            </div>
-            <div class="name-card">
-                <div class="name">Debajyoti Mazumder</div>
-                <div class="role">
-                    <span class="role-icon">💻</span>
-                    <span class="title">NLP Researcher</span>
-                </div>
-                <div class="affiliation">
-                    <span class="org-icon">🏫</span>
-                    <span class="company">IISER Bhopal</span>
-                </div>
-                <div class="social-icons">
-                    <a href="#" title="Email" class="social-icon">✉️</a>
-<!--                     <a href="#" title="Twitter" class="social-icon">𝕏</a> -->
-<!--                     <a href="#" title="Instagram" class="social-icon">📷</a> -->
-                    <a href="https://github.com/debajyotimaz" title="GitHub" class="social-icon">🐙</a>
-                    <a href="https://www.linkedin.com/in/debamaz/" title="LinkedIn" class="social-icon">👥</a>
-                    <a href="https://scholar.google.com/citations?user=gGRVwn8AAAAJ&hl=en" title="Google Scholar" class="social-icon">🎓</a>
-                </div>
-            </div>
-        </div>
-        
-       
-        <div class="hero-content">
-            <h1 class="hero-title">About Me</h1>
-            <p class="hero-text">
-        <strong>NLP Researcher</strong><br><br>
-
-        <strong>Technical Skills:</strong> Pytorch, HuggingFace<br><br>
-
-        <strong>Contact:</strong> debajyotimaz [at] gmail [dot] com
-            </p>
-            <p class="hero-text">
-                Debajyoti Mazumder is a Ph.D research scholar in the Data Science and Engineering(DSE) Department at the Indian Institute of Science Education and Research Bhopal. He is working under the guidance of Dr. Jasabanta Patro. His research interests lie in various subfields of Natural Language Processing(NLP).
-            </p>
-            <a href="assets/resume.pdf" class="download-btn" target="_blank">
-                <span>⬇️</span> Download Resume
-            </a>
-        </div>
-    </section>
-    
-    <div class="sections">
-        <div class="section">
-            <h2 class="section-title">Interests</h2>
-            <ul class="interests-list">
-                <li>• Multilinguality</li>
-                <li>• Finetuning pretrained models</li>
-                <li>• In-context learning</li>
-                <li>• Instruction tuning</li>
-                <li>• Multiplex networks in graph-ML</li>
-            </ul>
-        </div>
-        
-        <div class="section">
-            <h2 class="section-title">Education</h2>
-            <div class="education-item">
-                <div class="education-icon">🎓</div>
-                <div class="education-details">
-                    <h3>Ph.D., Data Science and Engineering</h3>
-                    <p>Indian Institute of Science Education and Research Bhopal (IISERB), India (pursuing)</p>
-                </div>
-            </div>
-            <div class="education-item">
-                <div class="education-icon">🎓</div>
-                <div class="education-details">
-                    <h3>M.Sc., Mathematics</h3>
-                    <p>University of Delhi, India (2020)</p>
-                </div>
-            </div>
-            <div class="education-item">
-                <div class="education-icon">🎓</div>
-                <div class="education-details">
-                    <h3>B.Sc., Mathematics Honours</h3>
-                    <p>University of Delhi, India (2018)</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="projects-section">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-		<!-- Use raw.githubusercontent.com instead of github.com -->
-		<img src="https://raw.githubusercontent.com/islnlp/code-mix-hate-detection-ACM-TALLIP-2025/main/hate_logo.png" 
-         	alt="Code-Mixed Hate Detection Logo" 
-         	class="project-img" style="object-fit: contain; background: #f0f0f0;">
-                    <div class="project-content">
-                        <h3 class="project-title">Code-mixed hate detection</h3>
-                        <p class="project-desc"> Native sample mixing strategy to improve code-mixed hate detection.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">Finetuning LLM</span>
-                            <span class="project-tag">NLP</span>
-                            <span class="project-tag">Transfer learning</span>
-                        </div>
-                    </div>
-                </div>
-                
-
-            </div>
-        </div>
+  <nav>
+    <div class="logo">
+      <a href="https://debajyotimaz.github.io/">Debajyoti Mazumder</a>
     </div>
-    
-    <footer>
-<!--         <div class="footer-links">
-            <a href="#bio">Bio</a>
-            <a href="#papers">Papers</a>
-            <a href="#talks">Talks</a>
-            <a href="#news">News</a>
-            <a href="#experience">Experience</a>
-            <a href="#projects">Projects</a>
-            <a href="#teaching">Teaching</a>
-        </div> -->
-        <p>© 2025 Debajyoti Mazumder. All rights reserved.</p>
-    </footer>
-    
-    <script>
-        const themeToggle = document.getElementById('theme-toggle');
-        themeToggle.addEventListener('click', () => {
-            document.body.classList.toggle('dark-mode');
-            themeToggle.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
-        });
-    </script>
+    <div class="nav-icons">
+      <div class="nav-links">
+        <a href="publication.html">Publications</a>
+        <a href="#news">News</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#teaching">Teaching</a>
+      </div>
+      <button id="theme-toggle">🌙</button>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="profile-section">
+      <div class="profile-container">
+        <img src="profile_image.jpg" alt="Debajyoti Mazumder" class="profile-img">
+        <div class="profile-border"></div>
+      </div>
+      <div class="name-card">
+        <div class="name">Debajyoti Mazumder</div>
+        <div class="role"><span>💻</span> NLP Researcher</div>
+        <div class="affiliation"><span>🏫</span> IISER Bhopal</div>
+        <div class="social-icons">
+          <a href="mailto:debajyotimaz@gmail.com" title="Email">✉️</a>
+          <a href="https://github.com/debajyotimaz" title="GitHub">🐙</a>
+          <a href="https://www.linkedin.com/in/debamaz/" title="LinkedIn">👥</a>
+          <a href="https://scholar.google.com/citations?user=gGRVwn8AAAAJ&hl=en" title="Scholar">🎓</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-content">
+      <h1>About Me</h1>
+      <p><strong>NLP Researcher</strong><br><br><strong>Skills:</strong> PyTorch, HuggingFace<br><br><strong>Contact:</strong> debajyotimaz [at] gmail [dot] com</p>
+      <p>I'm a Ph.D. scholar at IISER Bhopal, working under Dr. Jasabanta Patro. My interests span multilingual NLP, finetuning LLMs, and graph-ML networks.</p>
+      <a href="assets/resume.pdf" class="download-btn" target="_blank">⬇️ Download Resume</a>
+    </div>
+  </section>
+
+  <div class="sections">
+    <div class="section">
+      <h2>Interests</h2>
+      <ul class="interests-list">
+        <li>Multilinguality</li>
+        <li>Finetuning Pretrained Models</li>
+        <li>In-context Learning</li>
+        <li>Instruction Tuning</li>
+        <li>Multiplex Networks in Graph-ML</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Education</h2>
+      <div class="education-item">
+        <span>🎓</span>
+        <div>
+          <h3>Ph.D., Data Science and Engineering</h3>
+          <p>IISER Bhopal (pursuing)</p>
+        </div>
+      </div>
+      <div class="education-item">
+        <span>🎓</span>
+        <div>
+          <h3>M.Sc., Mathematics</h3>
+          <p>University of Delhi (2020)</p>
+        </div>
+      </div>
+      <div class="education-item">
+        <span>🎓</span>
+        <div>
+          <h3>B.Sc., Mathematics Honours</h3>
+          <p>University of Delhi (2018)</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="projects" class="projects-section">
+      <h2>Featured Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <img src="https://raw.githubusercontent.com/islnlp/code-mix-hate-detection-ACM-TALLIP-2025/main/hate_logo.png" alt="Code-Mixed Hate Detection" class="project-img">
+          <div class="project-content">
+            <h3>Code-Mixed Hate Detection</h3>
+            <p>Native sample mixing for improving code-mixed hate detection.</p>
+            <div class="project-tags">
+              <span>Finetuning LLM</span>
+              <span>NLP</span>
+              <span>Transfer Learning</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Debajyoti Mazumder. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('theme-toggle').onclick = function() {
+      document.body.classList.toggle('dark-mode');
+      this.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
+    }
+  </script>
 </body>
 </html>
+
