@@ -392,17 +392,24 @@
             border-radius: 12px;
             overflow: hidden;
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+            display: block;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .project-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
         }
 
         .dark-mode .project-card {
             background: var(--card-bg-dark);
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
         }
-
-        .project-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    
+        .dark-mode .project-card:hover {
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
         }
 
         .project-img {
@@ -663,7 +670,7 @@
         <div class="section" id="projects">
             <h2 class="section-title">Featured Projects</h2>
             <div class="projects-grid">
-                <div class="project-card">
+                <a href="https://github.com/islnlp/code-mix-hate-detection-ACM-TALLIP-2025" class="project-card" target="_blank" rel="noopener noreferrer">
                     <img src="https://raw.githubusercontent.com/islnlp/code-mix-hate-detection-ACM-TALLIP-2025/main/hate_logo.png" alt="Code-Mixed Hate Detection Logo" class="project-img">
                     <div class="project-content">
                         <h3 class="project-title">Code-Mixed Hate Detection</h3>
@@ -674,7 +681,7 @@
                             <span class="project-tag">Transfer Learning</span>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
 
