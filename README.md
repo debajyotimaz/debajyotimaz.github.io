@@ -1,11 +1,27 @@
-# NLP Researcher
+# tsParticles Example
 
-#### Technical Skills: Pytorch, Tensorflow, Docker
+This example shows a Next.js application using [React tsParticles](https://github.com/matteobruni/tsparticles/tree/main/components/react) package for creating beautiful particles animations.
 
-## Education
-- Ph.D., Data Science and Engineering | IISER-Bhopal, India (_pursuing_)								       		
-- M.Sc., Mathematics	| University of Delhi, India (_2020_)	 			        		
-- B.Sc., Mathematics Honours | University of Delhi, India (_2018_ )
+Learn more about tsParticles [in the docs](https://particles.js.org/docs).
 
-**Contact:** debajyotimaz [at] gmail [dot] com
+## Deploy your own
 
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-particles&project-name=with-particles&repository-name=with-particles)
+
+## How to use
+
+Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+
+```bash
+npx create-next-app --example with-particles with-particles-app
+```
+
+```bash
+yarn create next-app --example with-particles with-particles-app
+```
+
+```bash
+pnpm create next-app -- --example with-particles with-particles-app
+```
+
+Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
