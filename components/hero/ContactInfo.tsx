@@ -13,10 +13,10 @@ function ContactItem({ icon, text, href }: ContactItemProps) {
   return (
     <Component
       href={href}
-      className={`flex items-center gap-2 px-4 py-1 ${href ? 'hover:scale-105' : ''} transition-transform duration-200`}
+      className={`flex items-center gap-2 px-4 py-1 ${href ? 'hover:scale-105' : ''}  transition-transform duration-200`}
     >
       <span className="text-blue-600 dark:text-blue-400">{icon}</span>
-      <span className="text-white hover:text-blue-600 dark:hover:text-blue-400">
+      <span className="text-white hover:text-blue-600 dark:hover:text-blue-400 ">
         {text}
       </span>
     </Component>

@@ -120,10 +120,10 @@ export function Hero() {
               <div className="inline-block bg-blue-100 dark:bg-blue-900/50 backdrop-blur-sm text-blue-600 dark:text-blue-300 text-sm font-medium px-4 py-2 rounded-full">
               Hey! <span className="inline-block origin-[70%_70%] animate-wave">👋</span> I'm
               </div>
-              <h1 className={`text-4xl lg:text-6xl font-bold ${ !isDarkMode ? 'text-white' : 'bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600'} bg-clip-text text-transparent animate-gradient`}>
+              <h1 className={`text-4xl lg:text-6xl font-bold ${ !isDarkMode ? 'text-white' : 'bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600'} bg-clip-text text-transparent py-2 animate-gradient`}>
                 Debajyoti Mazumder
               </h1>
-              <div className="text-xl md:text-2xl text-gray-600 dark:text-gray-300">
+              <div className="text-xl md:text-2xl text-white dark:text-gray-300">
                 I'm a <TypeWriter words={roles} delay={100} />
               </div>
             </div>
