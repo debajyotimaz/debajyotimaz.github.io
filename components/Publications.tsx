@@ -22,7 +22,7 @@
 import { useState, useEffect } from 'react';
 
 export default function Publications() {
-  const [hoveredPub, setHoveredPub] = useState(null);
+  const [hoveredPub, setHoveredPub] = useState<number | null>(null);
   const [expandedPub, setExpandedPub] = useState(null);
 
   const publications = [
@@ -45,7 +45,7 @@ export default function Publications() {
     }
   ];
 
-  const getImpactColor = (impact) => {
+  const getImpactColor = (impact: string) => {
     switch(impact.toLowerCase()) {
       case 'high': return 'from-green-400 to-emerald-500';
       case 'medium': return 'from-yellow-400 to-orange-500';
