@@ -71,7 +71,7 @@ export function Navbar() {
           <div className="cursor-pointer" onClick={handleLogoClick}>
             {/* <img src="/assets/favicon.png" alt="Logo" className="h-8 w-auto" /> */}
             
-          <div className="relative text-lg text-gray-600 dark:text-gray-300">
+          <div className="relative text-lg text-white dark:text-white">
           Debajyoti Mazumder </div>
               {/* <div className="absolute p-7 inset-0 rounded-full border-4 border-blue-600 opacity-50 animate-borderPulse"> */}
               {/* </div> */}
@@ -83,7 +83,7 @@ export function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="relative text-sm text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:scale-105"
+                className="relative text-sm text-white dark:text-white hover:text-blue-600 dark:hover:text-blue-400 hover:scale-105"
               >
                 {link.label}
                 {activeSection === link.href.substring(1) && (

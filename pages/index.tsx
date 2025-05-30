@@ -26,15 +26,12 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <Particles />
-        <div className="min-h-screen text-white">
+        <div className="min-h-screen text-white backdrop-blur-sm">
         <Navbar />
         <Hero />
-        <div className="max-w-5xl mx-auto p-6 grid gap-8">
+        <div className="max-w-full mx-auto p-6 grid gap-8">
           <div className="fade-in min-h-screen">
             <Bio />
-          </div>
-          <div className="fade-in min-h-screen">
-            <Interests />
           </div>
           <div className="fade-in min-h-screen">
             <Education />
@@ -46,13 +43,13 @@ const Home: NextPage = () => {
             <News />
           </div>
           <div className="fade-in min-h-screen">
-            <Experience />
-          </div>
-          <div className="fade-in min-h-screen">
             <Projects />
           </div>
-          <div className="fade-in min-h-screen">
+          {/* <div className="fade-in min-h-screen">
             <Teaching />
+          </div> */}
+          <div className="fade-in min-h-screen">
+            <Experience />
           </div>
         </div>
         </div>
