@@ -126,7 +126,7 @@ const ProjectsSection: React.FC = () => {
     },
   ];
   return (
-    <section className="py-20 px-4">
+    <section className="py-20 px-4" id="projects">
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -153,7 +153,7 @@ const ProjectsSection: React.FC = () => {
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="w-full h-48 object-fill group-hover:scale-105 transition-transform duration-300"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-gray-900/50 to-transparent" />
                 </div>

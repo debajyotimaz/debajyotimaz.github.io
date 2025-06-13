@@ -34,13 +34,13 @@ const Home: NextPage = () => {
             <Bio />
           </div>
           <div className="fade-in min-h-screen">
+            <News />
+          </div>
+          <div className="fade-in min-h-screen">
             <Education />
           </div>
           <div className="fade-in min-h-screen">
             <Publications />
-          </div>
-          <div className="fade-in min-h-screen">
-            <News />
           </div>
           <div className="fade-in min-h-screen">
             <Projects />

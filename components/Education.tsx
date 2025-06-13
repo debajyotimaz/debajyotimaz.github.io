@@ -56,7 +56,7 @@ export default function Education() {
   return (
     <div>
       {/* Main Content */}
-      <div className="relative z-10 container mx-auto px-6 py-20">
+      <div className="relative z-10 container mx-auto px-6 py-20" id="education">
         <div className="max-w-6xl mx-auto">
           {/* Header */}
           <div className="mb-20">

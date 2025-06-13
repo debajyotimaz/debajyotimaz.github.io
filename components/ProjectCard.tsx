@@ -20,7 +20,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ href, imgSrc, alt, title, des
       rel="noopener noreferrer"
       className={`${ !isDarkMode ? ' bg-[var(--card-bg)]' : 'bg-[var(--card-bg-dark)]'} h-100 rounded-xl shadow-md hover:-translate-y-2 hover:scale-105 transition-transform duration-300`}
     >
-      <Image src={imgSrc} alt={alt} width={320} height={200} className="w-full h-48 object-contain bg-gray-100" />
+      <Image src={imgSrc} alt={alt} width={320} height={200} className="w-full h-48 object-cover bg-gray-100" />
       <div className="p-4">
         <h3 className={`text-xl font-semibold ${ !isDarkMode ? 'text-[var(--primary-color)]' : 'text-[var(--accent-color)]'}`}>{title}</h3>
         <p className={`${!isDarkMode ? 'text-gray-600' : 'text-gray-400'} mb-4`}>{description}</p>

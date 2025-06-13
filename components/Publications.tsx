@@ -152,14 +152,14 @@ export default function Publications() {
                     </div>
 
                     {/* Abstract */}
-                    <div className="mb-6">
+                    {/* <div className="mb-6">
                       <h4 className="text-lg font-semibold text-blue-200 mb-3 flex items-center gap-2">
                         <span>🔍</span> Abstract
                       </h4>
                       <p className="text-gray-300 leading-relaxed">
                         {pub.abstract}
                       </p>
-                    </div>
+                    </div> */}
 
                     {/* Keywords */}
                     <div className="mb-6">

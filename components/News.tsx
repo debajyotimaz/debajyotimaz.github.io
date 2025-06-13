@@ -51,7 +51,7 @@ export default function News() {
     {
       id: 2,
       date: "Mar 2025",
-      title: "TALLIP Publication Accepted",
+      title: "TALLIP-2025 Accepted",
       description: "Manuscript titled \"Improving code-mixed hate detection by native sample mixing: A case study for Hindi-English code-mixed scenario\" accepted for publication in Transactions on Asian and Low-Resource Language Information Processing (TALLIP)-2025.",
       type: "publication",
       icon: "📚",
@@ -197,7 +197,7 @@ export default function News() {
         </div>
 
         {/* News Stats */}
-        <div className="mt-20 grid grid-cols-1 md:grid-cols-4 gap-6">
+        {/* <div className="mt-20 grid grid-cols-1 md:grid-cols-4 gap-6">
           <div className="text-center p-6 bg-gradient-to-br from-yellow-900/40 to-orange-900/30 backdrop-blur-sm rounded-2xl border border-yellow-500/20">
             <div className="text-4xl mb-3">🏆</div>
             <div className="text-2xl font-bold text-yellow-400">1</div>
@@ -221,7 +221,7 @@ export default function News() {
             <div className="text-2xl font-bold text-cyan-400">2025</div>
             <div className="text-gray-300 text-sm">Active Year</div>
           </div>
-        </div>
+        </div> */}
       </div>
       <style jsx>{`
         @keyframes spin-slow {

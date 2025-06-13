@@ -114,7 +114,7 @@ const TeachingSection: React.FC = () => {
   const subjectStats = getSubjectStats();
 
   return (
-    <section className=" py-20 px-4 relative overflow-hidden">
+    <section className=" py-20 px-4 relative overflow-hidden" id='teaching'>
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-0" style={{
@@ -237,7 +237,7 @@ const TeachingSection: React.FC = () => {
         </div>
 
         {/* Subject Summary */}
-        <div className="mt-16 bg-gray-900/30 backdrop-blur-sm rounded-xl p-8 border border-gray-800">
+        {/* <div className="mt-16 bg-gray-900/30 backdrop-blur-sm rounded-xl p-8 border border-gray-800">
           <h3 className="text-2xl font-bold text-white mb-6 text-center">Course Distribution</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {subjectStats.map(({ subject, count }) => (
@@ -250,7 +250,7 @@ const TeachingSection: React.FC = () => {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
