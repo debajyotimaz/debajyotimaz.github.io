@@ -54,7 +54,7 @@ export function Navbar() {
     { href: '#bio', label: 'Bio' },
     { href: '#publications', label: 'Publications' },
     { href: '#news', label: 'News' },
-    { href: '#experience', label: 'Experience' },
+    { href: '#education', label: 'Education' },
     { href: '#projects', label: 'Projects' },
     { href: '#teaching', label: 'Teaching' },
   ];
@@ -63,15 +63,15 @@ export function Navbar() {
     <>
       {/* <LoadingScreen isLoading={isLogoAnimating} /> */}
       <nav
-        className={`fixed top-2 left-1/2 transform -translate-x-1/2 z-50 w-[90%] max-w-6xl rounded-2xl
-                    ${isScrolled ? 'bg-white/80 dark:bg-gray-900/80 backdrop-blur-md outline-1 outline-blue-600' : 'bg-transparent'}`}
+        className={`sticky top-2 left-1/2 transform -translate-x-1/2 z-50 w-[90%] max-w-6xl rounded-2xl
+                    ${isScrolled ? ' bg-white/80 dark:bg-gray-900/80 backdrop-blur-md outline-1 outline-blue-600' : 'bg-transparent'}`}
       >
         <div className="flex items-center justify-between h-12 px-4">
           {/* Logo */}
           <div className="cursor-pointer" onClick={handleLogoClick}>
             {/* <img src="/assets/favicon.png" alt="Logo" className="h-8 w-auto" /> */}
             
-          <div className="relative text-lg text-gray-600 dark:text-gray-300">
+          <div className="relative text-lg text-white dark:text-white">
           Debajyoti Mazumder </div>
               {/* <div className="absolute p-7 inset-0 rounded-full border-4 border-blue-600 opacity-50 animate-borderPulse"> */}
               {/* </div> */}
@@ -83,7 +83,7 @@ export function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="relative text-sm text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:scale-105"
+                className="relative text-sm text-white dark:text-white hover:text-blue-600 dark:hover:text-blue-400 hover:scale-105"
               >
                 {link.label}
                 {activeSection === link.href.substring(1) && (
