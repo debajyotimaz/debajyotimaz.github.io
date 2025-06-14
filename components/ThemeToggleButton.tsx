@@ -11,7 +11,7 @@ const ThemeToggleButton: React.FC = () => {
       onClick={toggleTheme}
       // className={`px-4 py-2 rounded ${isDarkMode ? 'bg-gray-800 text-white' : 'bg-gray-200 text-black'}`}
     >
-      {isDarkMode ? <SunIcon className='w-6 h-6 text-gray-900 dark:text-white' /> : <MoonIcon className='w-6 h-6 text-gray-900 dark:text-white' />}
+      {isDarkMode ? <SunIcon className='w-6 h-6 m-4 text-white' /> : <MoonIcon className='w-6 h-6 m-4 text-gray-900 text-white' />}
     </button>
   );
 };

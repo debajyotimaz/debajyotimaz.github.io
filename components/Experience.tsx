@@ -44,7 +44,7 @@ const TeachingSection: React.FC = () => {
       endDate: '2025-04',
       icon: <Code size={20} />,
       color: 'from-blue-500 to-cyan-500',
-      description: 'Guiding students through fundamental programming concepts and problem-solving techniques.'
+      // description: 'Guiding students through fundamental programming concepts and problem-solving techniques.'
     },
     {
       id: '2',
@@ -57,7 +57,7 @@ const TeachingSection: React.FC = () => {
       endDate: '2024-11',
       icon: <Brain size={20} />,
       color: 'from-purple-500 to-pink-500',
-      description: 'Supporting advanced NLP concepts, machine learning algorithms, and text processing techniques.'
+      // description: 'Supporting advanced NLP concepts, machine learning algorithms, and text processing techniques.'
     },
     {
       id: '3',
@@ -70,7 +70,7 @@ const TeachingSection: React.FC = () => {
       endDate: '2024-04',
       icon: <Code size={20} />,
       color: 'from-blue-500 to-cyan-500',
-      description: 'Mentoring students in programming fundamentals and computational thinking.'
+      // description: 'Mentoring students in programming fundamentals and computational thinking.'
     },
     {
       id: '4',
@@ -83,7 +83,7 @@ const TeachingSection: React.FC = () => {
       endDate: '2023-11',
       icon: <Brain size={20} />,
       color: 'from-purple-500 to-pink-500',
-      description: 'Assisting with NLP coursework, research projects, and student guidance.'
+      // description: 'Assisting with NLP coursework, research projects, and student guidance.'
     },
     {
       id: '5',
@@ -96,7 +96,7 @@ const TeachingSection: React.FC = () => {
       endDate: '2023-04',
       icon: <Calculator size={20} />,
       color: 'from-green-500 to-teal-500',
-      description: 'Supporting optimization theory, mathematical modeling, and algorithmic problem solving.'
+      // description: 'Supporting optimization theory, mathematical modeling, and algorithmic problem solving.'
     }
   ];
 

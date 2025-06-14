@@ -166,7 +166,7 @@ export default function News() {
                       </p>
 
                       {/* Action Buttons */}
-                      <div className="flex flex-wrap gap-3">
+                      {/* <div className="flex flex-wrap gap-3">
                         <button className={`flex items-center gap-2 px-4 py-2 bg-gradient-to-r ${news.color}/20 text-white border border-current/30 rounded-full text-sm font-medium hover:bg-current/30 transition-all duration-300 hover:scale-105`}>
                           <span>🔗</span> Learn More
                         </button>
@@ -174,7 +174,7 @@ export default function News() {
                         <button className="flex items-center gap-2 px-4 py-2 bg-blue-600/20 text-blue-200 border border-blue-500/30 rounded-full text-sm font-medium hover:bg-blue-600/30 transition-all duration-300 hover:scale-105">
                           <span>📤</span> Share
                         </button>
-                      </div>
+                      </div> */}
 
                       {/* Animated Progress Bar */}
                       <div className="mt-4 w-0 h-1 bg-gradient-to-r from-current to-transparent group-hover:w-full transition-all duration-1000 rounded-full"></div>

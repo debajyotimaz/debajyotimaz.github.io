@@ -29,7 +29,7 @@ const Home: NextPage = () => {
         <div className="min-h-screen text-white backdrop-blur-sm">
         <Navbar />
         <Hero />
-        <div className="max-w-full mx-auto p-6 grid gap-8">
+        <div className="max-w-full mx-auto p-6 grid gap-8 grid-cols-1 ">
           <div className="fade-in min-h-screen">
             <Bio />
           </div>
