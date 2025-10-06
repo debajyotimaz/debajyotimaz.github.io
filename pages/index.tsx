@@ -14,6 +14,7 @@ import News from "../components/News";
 import Experience from "../components/Experience";
 import Projects from "../components/Projects";
 import Teaching from "../components/Teaching";
+import WorkExperience from "../components/WorkExperience";
 
 const Home: NextPage = () => {
   return (
@@ -35,6 +36,9 @@ const Home: NextPage = () => {
           </div>
           <div className="fade-in min-h-screen">
             <News />
+          </div>
+          <div className="fade-in min-h-screen">
+            <WorkExperience />
           </div>
           <div className="fade-in min-h-screen">
             <Education />

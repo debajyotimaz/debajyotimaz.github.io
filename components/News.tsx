@@ -38,6 +38,18 @@ export default function News() {
   const newsData = [
     {
       id: 1,
+      date: "Sept 2025",
+      title: "ANRF International Travel Scheme (ITS) (Presenter), EMNLP-Findings 2025",
+      description: "Awarded the ANRF International Travel Scheme (ITS) to present research at EMNLP-Findings 2025 in Suzhou, CHINA.",
+      type: "award",
+      icon: "🏆",
+      color: "from-blue-400 to-cyan-500",
+      bgColor: "from-blue-900/40 to-cyan-900/30",
+      borderColor: "border-blue-500/30",
+      importance: "high"
+    },
+    {
+      id: 2,
       date: "May 2025",
       title: "ACM Professional Membership",
       description: "Awarded professional membership by the Association for Computing Machinery (ACM).",
@@ -49,7 +61,7 @@ export default function News() {
       importance: "high"
     },
     {
-      id: 2,
+      id: 3,
       date: "Mar 2025",
       title: "TALLIP-2025 Accepted",
       description: "Manuscript titled \"Improving code-mixed hate detection by native sample mixing: A case study for Hindi-English code-mixed scenario\" accepted for publication in Transactions on Asian and Low-Resource Language Information Processing (TALLIP)-2025.",
@@ -61,7 +73,7 @@ export default function News() {
       importance: "high"
     },
     {
-      id: 3,
+      id: 4,
       date: "Mar 2025",
       title: "SIGIR 2025 Challenge Selection",
       description: "Selected for LiveRAG Challenge track, SIGIR 2025.",

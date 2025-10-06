@@ -40,19 +40,26 @@ export default function Publications() {
       category: "NLP",
       keywords: ["Code-Mixed Text", "Hate Speech Detection", "Multilingual NLP", "Hindi-English", "Social Computing"],
       abstract: "This research addresses the challenging problem of hate speech detection in code-mixed scenarios, specifically focusing on Hindi-English mixed content commonly found in social media platforms.",
-      impact: "High",
+      status: "Published"
+    },
+    {
+      id: 2,
+      title: "Revealing the impact of synthetic native samples and multi‑tasking strategies in Hindi‑English code‑mixed humour and sarcasm detection",
+      authors: ["Debajyoti Mazumder", "Aakash Kumar", "Jasabanta Patro"],
+      journal: "EMNLP Findings‑2025",
+      year: "2025",
+      volume: "2025",
+      issue: "N/A",
+      article: "N/A",
+      pages: "N/A",
+      doi: "https://arxiv.org/abs/2412.12761",
+      category: "NLP",
+      keywords: ["Code-Mixed Text", "Humour Detection", "Sarcasm Detection", "Multilingual NLP", "Hindi-English"],
+      abstract: "This study explores the effectiveness of synthetic native samples and multi-task learning strategies in enhancing humour and sarcasm detection in Hindi-English code-mixed text.",
       status: "Published"
     }
   ];
 
-  const getImpactColor = (impact: string) => {
-    switch(impact.toLowerCase()) {
-      case 'high': return 'from-green-400 to-emerald-500';
-      case 'medium': return 'from-yellow-400 to-orange-500';
-      case 'low': return 'from-blue-400 to-cyan-500';
-      default: return 'from-gray-400 to-gray-500';
-    }
-  };
 
   return (
     <div className="min-h-screen relative overflow-hidden" id='publications'>
@@ -94,9 +101,6 @@ export default function Publications() {
                         <div className="flex items-center gap-3 mb-4">
                           <span className="px-3 py-1 bg-green-500/20 text-green-300 border border-green-400/30 rounded-full text-sm font-medium">
                             ✅ {pub.status}
-                          </span>
-                          <span className={`px-3 py-1 bg-gradient-to-r ${getImpactColor(pub.impact)}/20 text-white border border-current/30 rounded-full text-sm font-medium`}>
-                            🎯 {pub.impact} Impact
                           </span>
                           <span className="px-3 py-1 bg-blue-500/20 text-blue-300 border border-blue-400/30 rounded-full text-sm font-medium">
                             🏷️ {pub.category}
