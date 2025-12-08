@@ -116,6 +116,25 @@ const ProjectsSection: React.FC = () => {
   const projects: Project[] = [
     {
       id: '1',
+      title: "Revealing the impact of synthetic native samples and multi-tasking strategies in Hindi-English code-mixed humour and sarcasm detection",
+      description: "This project investigates the effectiveness of synthetic native samples and multi-tasking strategies for detecting humour and sarcasm in Hindi-English code-mixed conversations.",
+      tags: ['NLP', 'Code-Mixed Text', 'Humour Detection', 'Sarcasm Detection'],
+      links: {
+        link: 'https://arxiv.org/abs/2412.12761',
+        github: 'https://github.com/islnlp/code-mix-humor-sarcasm-detection-EMNLP-2025'
+      }
+    },
+    {
+      id: '2',
+      title: 'Mind the Links: Cross-Layer Attention for Link Prediction in Multiplex Networks',
+      description: 'This project presents a novel approach using cross-layer attention mechanisms to enhance link prediction accuracy in multiplex networks, which consist of multiple types of relationships between nodes.',
+      tags: ['NLP', 'Graph Neural Networks', 'Link Prediction', 'Multiplex Networks'],
+      links: {
+        link: 'https://arxiv.org/abs/2509.23409',
+      }
+    },
+    {
+      id: '3',
       title: 'Code-Mixed Hate Detection',
       description: 'Developed a native sample mixing strategy to improve code-mixed hate detection in multilingual settings. This project focuses on enhancing the performance of NLP models in detecting hate speech in code-mixed languages.',
       image: 'https://raw.githubusercontent.com/islnlp/code-mix-hate-detection-ACM-TALLIP-2025/main/hate_logo.png',
