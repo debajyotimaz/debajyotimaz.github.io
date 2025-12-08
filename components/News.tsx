@@ -38,6 +38,30 @@ export default function News() {
   const newsData = [
     {
       id: 1,
+      date: "Dec 2025",
+      title: "Invitation to present paper at ARCS 2026",
+      description: "Invitation from ACM India ARCS 2026 organizing committee to present paper \"Revealing the impact of synthetic native samples and multi-tasking strategies in Hindi-English code-mixed humour and sarcasm detection\" from EMNLP 2025 at ARCS 2026.",
+      type: "invitation",
+      icon: "✉️",
+      color: "from-purple-400 to-pink-500",
+      bgColor: "from-purple-900/40 to-pink-900/30",
+      borderColor: "border-purple-500/30",
+      importance: "medium"
+    },
+    {
+      id: 2,
+      date: "Dec 2025",
+      title: "Paper got accepted as a short paper in WSDM 2026",
+      description: " Happy to share that our paper \"Mind the Links: Cross-Layer Attention for Link Prediction in Multiplex Networks\" got accepted as a short paper in WSDM 2026. ACM WSDM is one of the top-notch (Core A) data mining conferences.",
+      type: "publication",
+      icon: "📚",
+      color: "from-green-400 to-blue-500",
+      bgColor: "from-green-900/40 to-blue-900/30",
+      borderColor: "border-green-500/30",
+      importance: "high"
+    },
+    {
+      id: 3,
       date: "Sept 2025",
       title: "ANRF International Travel Scheme (ITS) (Presenter), EMNLP-Findings 2025",
       description: "Awarded the ANRF International Travel Scheme (ITS) to present research at EMNLP-Findings 2025 in Suzhou, CHINA.",
@@ -49,7 +73,7 @@ export default function News() {
       importance: "high"
     },
     {
-      id: 2,
+      id: 4,
       date: "May 2025",
       title: "ACM Professional Membership",
       description: "Awarded professional membership by the Association for Computing Machinery (ACM).",
@@ -61,7 +85,7 @@ export default function News() {
       importance: "high"
     },
     {
-      id: 3,
+      id: 5,
       date: "Mar 2025",
       title: "TALLIP-2025 Accepted",
       description: "Manuscript titled \"Improving code-mixed hate detection by native sample mixing: A case study for Hindi-English code-mixed scenario\" accepted for publication in Transactions on Asian and Low-Resource Language Information Processing (TALLIP)-2025.",
@@ -73,7 +97,7 @@ export default function News() {
       importance: "high"
     },
     {
-      id: 4,
+      id: 6,
       date: "Mar 2025",
       title: "SIGIR 2025 Challenge Selection",
       description: "Selected for LiveRAG Challenge track, SIGIR 2025.",

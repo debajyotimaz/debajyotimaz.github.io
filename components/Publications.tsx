@@ -28,6 +28,22 @@ export default function Publications() {
   const publications = [
     {
       id: 1,
+      title: "Mind the Links: Cross-Layer Attention for Link Prediction in Multiplex Networks",
+      authors: ["Devesh Sharma", "Aditya Kishore", "Ayush Garg", "DEBAJYOTI MAZUMDER", "Debasis Mahapatra", "Jasabanta Patro"],
+      journal: "https://wsdm-conference.org/2026/",
+      year: "2026",
+      volume: "N/A",
+      issue: "N/A",
+      article: "N/A",
+      pages: "5",
+      doi: "https://arxiv.org/abs/2509.23409",
+      category: "NLP",
+      keywords: ["Multiplex Networks", "Link Prediction", "Graph Neural Networks", "Cross-Layer Attention", "Network Embedding"],
+      abstract: "Multiplex graphs capture diverse relations among shared nodes. Most predictors either collapse layers or treat them independently. This loses crucial inter-layer dependencies and struggles with scalability. To overcome this, we frame multiplex link prediction as multi-view edge classification. This paper introduces a novel cross-layer attention mechanism for link prediction in multiplex networks, demonstrating significant improvements over existing methods through extensive experiments on real-world datasets.For each node pair, we construct a sequence of per-layer edge views and apply cross-layer self-attention to fuse evidence for the target layer. We present two models as instances of this framework: Trans-SLE, a lightweight transformer over static embeddings, and Trans-GAT, which combines layer-specific GAT encoders with transformer fusion. To ensure scalability and fairness, we introduce a Union--Set candidate pool and two leakage-free protocols: cross-layer and inductive subgraph generalization. Experiments on six public multiplex datasets show consistent macro-F_1 gains over strong baselines (MELL, HOPLP-MUL, RMNE). Our approach is simple, scalable, and compatible with both precomputed embeddings and GNN encoders.",
+      status: "Accepted"
+    },
+    {
+      id: 2,
       title: "Improving Code-Mixed Hate Detection by Native Sample Mixing: A Case Study for Hindi-English Code-Mixed Scenario",
       authors: ["Debajyoti Mazumder", "Aakash Kumar", "Jasabanta Patro"],
       journal: "ACM Trans. Asian Low-Resour. Lang. Inf. Process.",
@@ -43,7 +59,7 @@ export default function Publications() {
       status: "Published"
     },
     {
-      id: 2,
+      id: 3,
       title: "Revealing the impact of synthetic native samples and multi‑tasking strategies in Hindi‑English code‑mixed humour and sarcasm detection",
       authors: ["Debajyoti Mazumder", "Aakash Kumar", "Jasabanta Patro"],
       journal: "EMNLP Findings‑2025",
