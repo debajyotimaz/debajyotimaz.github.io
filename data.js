@@ -103,7 +103,8 @@ window.SITE = {
   ],
 
   honors: [
-    ["2026", "ACM/IARCS Travel Grant, EMNLP 2026"],
+    ["2026", "ACM/IARCS Travel Grant"],
+    ["2026", "EMNLP D&I Student Volunteer"],
     ["2026", "MLSS NYC 2026, Columbia University"],
     ["2026", "SIGIR Student Travel Grant, WSDM 2026"],
     ["2026", "ACM Travel Grant, ARCS 2026 (invited talk)"],
