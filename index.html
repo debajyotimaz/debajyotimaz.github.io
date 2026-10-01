@@ -4,16 +4,16 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Debajyoti Mazumder</title>
-<meta name="description" content="Debajyoti Mazumder, PhD candidate at IISER Bhopal working on multilingual and code-mixed NLP, cross-lingual knowledge consistency in LLMs, and fact verification.">
+<meta name="description" content="Debajyoti Mazumder, Ph.D. scholar in Data Science and Engineering at IISER Bhopal, working on code-mixed, multilingual and low-resource NLP.">
 <meta property="og:title" content="Debajyoti Mazumder">
-<meta property="og:description" content="Multilingual & code-mixed NLP · cross-lingual knowledge in LLMs · fact verification">
+<meta property="og:description" content="Code-mixed, multilingual and low-resource NLP · IISER Bhopal">
 <meta property="og:image" content="https://debajyotimaz.github.io/assets/profile.jpg">
 <meta property="og:url" content="https://debajyotimaz.github.io/">
 <meta name="twitter:card" content="summary">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231d3f8f'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' fill='white' text-anchor='middle'%3EDM%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+Devanagari:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Person","name":"Debajyoti Mazumder","jobTitle":"PhD candidate","affiliation":{"@type":"Organization","name":"IISER Bhopal"},"url":"https://debajyotimaz.github.io/","sameAs":["https://scholar.google.com/citations?user=gGRVwn8AAAAJ","https://github.com/debajyotimaz","https://www.linkedin.com/in/debamaz/"]}
 </script>
@@ -94,12 +94,6 @@ b, strong { font-weight: 600; }
 .lede { font-family: var(--serif); font-size: 22px; line-height: 1.5; color: var(--ink); margin: 0 0 18px; max-width: 34em; }
 .lede em { font-style: italic; color: var(--warm); }
 .bio { color: var(--ink-2); max-width: 38em; margin: 0 0 12px; }
-.market {
-  display: inline-flex; align-items: center; gap: 10px; margin: 14px 0 6px;
-  font-size: 14px; padding: 7px 14px; border-radius: 999px;
-  background: var(--accent-soft); color: var(--ink);
-}
-.market::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: #2f9e5b; box-shadow: 0 0 0 3px color-mix(in srgb, #2f9e5b 25%, transparent); }
 .links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 24px; }
 .links a {
   display: inline-flex; align-items: center; gap: 7px; font-size: 14px; color: var(--ink);
@@ -111,36 +105,6 @@ b, strong { font-weight: 600; }
 .links svg { width: 15px; height: 15px; }
 .portrait { width: 220px; height: auto; aspect-ratio: 1; border-radius: 6px; object-fit: cover; filter: saturate(.92); box-shadow: 0 1px 0 var(--rule), 0 20px 40px -24px rgba(0,0,0,.35); }
 
-/* --- the question (signature piece) --- */
-.question {
-  margin: 24px 0 8px; border: 1px solid var(--rule); border-radius: 10px; background: var(--surface);
-  display: grid; grid-template-columns: 1.1fr 1fr; overflow: hidden;
-}
-.q-left { padding: 28px 30px; border-right: 1px solid var(--rule); }
-.q-right { padding: 28px 30px; }
-.kicker { font-family: var(--mono); font-size: 11px; text-transform: uppercase; letter-spacing: .12em; color: var(--muted); margin-bottom: 14px; }
-.q-tabs { display: flex; gap: 6px; margin-bottom: 18px; }
-.q-tabs button {
-  font: 500 12px var(--mono); padding: 5px 10px; border-radius: 6px; cursor: pointer;
-  background: transparent; border: 1px solid var(--rule); color: var(--ink-2);
-}
-.q-tabs button[aria-selected="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
-.q-text {
-  font-family: var(--serif); font-size: 26px; line-height: 1.35; min-height: 2.8em; margin: 0;
-  transition: opacity .25s;
-}
-.q-text.hi { font-family: "Noto Sans Devanagari", var(--serif); font-size: 23px; }
-.q-note { font-size: 14px; color: var(--ink-2); margin: 14px 0 0; }
-.bars { display: grid; gap: 16px; margin-top: 4px; }
-.bar-row { display: grid; grid-template-columns: 112px 1fr 56px; align-items: center; gap: 12px; font-size: 14px; }
-.bar-row .lab { color: var(--ink-2); }
-.bar-track { height: 10px; background: var(--rule); border-radius: 5px; position: relative; overflow: hidden; }
-.bar-fill { position: absolute; inset: 0 auto 0 0; background: var(--ink-2); border-radius: 5px; width: 0; transition: width 1s cubic-bezier(.2,.7,.2,1); }
-.bar-row.native .bar-fill { background: var(--warm); }
-.bar-row.cm .bar-fill { background: var(--accent); }
-.bar-row .val { font-family: var(--mono); font-size: 13px; text-align: right; color: var(--ink); }
-.q-takeaway { margin: 22px 0 0; font-size: 14px; color: var(--ink-2); border-top: 1px dashed var(--rule); padding-top: 14px; }
-.q-takeaway b { color: var(--ink); }
 
 /* --- sections --- */
 section.block { display: grid; grid-template-columns: 180px 1fr; gap: 40px; padding: 56px 0; border-top: 1px solid var(--rule); }
@@ -242,16 +206,12 @@ footer { border-top: 1px solid var(--rule); padding: 28px 0 48px; font-size: 13p
   .top .iconbtn { margin-left: auto; }
   .hero { grid-template-columns: 1fr; gap: 28px; padding-top: 40px; }
   .portrait { width: 132px; order: -1; }
-  .question { grid-template-columns: 1fr; }
-  .q-left { border-right: 0; border-bottom: 1px solid var(--rule); }
   section.block { grid-template-columns: 1fr; gap: 12px; padding: 44px 0; }
   .themes, .cols { grid-template-columns: 1fr; }
   .toggle { margin-left: 0; }
 }
 @media (max-width: 520px) {
   .wrap { padding: 0 16px; }
-  .q-left, .q-right { padding: 22px 20px; }
-  .bar-row { grid-template-columns: 92px 1fr 48px; }
   .news li { grid-template-columns: 1fr; gap: 2px; }
   .lede { font-size: 20px; }
 }
@@ -260,7 +220,7 @@ footer { border-top: 1px solid var(--rule); padding: 28px 0 48px; font-size: 13p
   .reveal { opacity: 1; transform: none; }
 }
 @media print {
-  .top, .q-tabs, .pub-tools, .more, .plinks button, .toast { display: none !important; }
+  .top, .pub-tools, .more, .plinks button, .toast { display: none !important; }
   .reveal { opacity: 1; transform: none; }
   .news li.hidden { display: grid; }
   body { background: #fff; }
@@ -273,9 +233,10 @@ footer { border-top: 1px solid var(--rule); padding: 28px 0 48px; font-size: 13p
   <div class="wrap">
     <a class="brand" href="#">Debajyoti Mazumder</a>
     <nav class="nav" aria-label="Sections">
+      <a href="#about">About</a>
+      <a href="#news">News</a>
       <a href="#research">Research</a>
       <a href="#publications">Publications</a>
-      <a href="#news">News</a>
       <a href="#experience">Experience</a>
       <a href="#more">Teaching &amp; Service</a>
     </nav>
@@ -287,14 +248,13 @@ footer { border-top: 1px solid var(--rule); padding: 28px 0 48px; font-size: 13p
 
 <main class="wrap">
 
-  <div class="hero">
+  <section class="hero" id="about">
     <div>
       <h1>Debajyoti Mazumder</h1>
-      <div class="role"><span>PhD candidate</span><span>Data Science &amp; Engineering</span><span>IISER Bhopal</span></div>
-      <p class="lede">I study what language models know, and why that knowledge goes missing when the question is asked in <em>another language</em>.</p>
-      <p class="bio">My research is on multilingual and code-mixed NLP: how models represent text that mixes languages (such as Hinglish), whether facts stay consistent across 18 Indian languages, and how to verify claims in text and speech. I'm advised by Dr. Akash Anil, and I've worked on LLM reasoning with RL at NielsenIQ and on recommender systems at Adobe. My background is in mathematics (B.Sc., M.Sc., University of Delhi).</p>
-      <p class="bio">Next, I want to explain these failures <i>mechanistically</i>: locate where cross-lingual knowledge breaks inside the model, and use that to build faithful, multilingual fact verification.</p>
-      <div class="market">Looking for postdoc positions from 2027</div>
+      <div class="role"><span>Ph.D. Scholar</span><span>Data Science &amp; Engineering</span><span>IISER Bhopal</span></div>
+      <p class="lede">I work on code-mixed NLP, within the broader areas of multilingual and low-resource NLP.</p>
+      <p class="bio">I'm a Ph.D. scholar in Data Science and Engineering at IISER Bhopal, advised by Dr. Akash Anil. My Ph.D. focuses on the synergy between the code-mixed setting and its constituent native languages.</p>
+      <p class="bio">I have published in transactions such as ACM TALLIP, conferences such as EMNLP, WSDM and AACL-IJCNLP, and workshops including DHOW-MiLLA@TheWebConf. My industry experience spans LLM reasoning and reinforcement learning at NielsenIQ, and recommender systems at Adobe.</p>
       <div class="links">
         <a class="primary" href="resume.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/></svg>CV</a>
         <a href="mailto:debajyotimaz@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-9 5.7a2 2 0 0 1-2 0L2 7"/></svg>Email</a>
@@ -304,33 +264,19 @@ footer { border-top: 1px solid var(--rule); padding: 28px 0 48px; font-size: 13p
       </div>
     </div>
     <img class="portrait" src="assets/profile.jpg" alt="Portrait of Debajyoti Mazumder" width="220" height="220">
-  </div>
+  </section>
 
-  <!-- Signature piece: the core research question, made concrete. -->
-  <div class="question reveal" aria-label="Research question illustrated">
-    <div class="q-left">
-      <div class="kicker">Same question, three forms</div>
-      <div class="q-tabs" role="tablist">
-        <button role="tab" aria-selected="true" data-q="0">English</button>
-        <button role="tab" aria-selected="false" data-q="1">हिन्दी</button>
-        <button role="tab" aria-selected="false" data-q="2">Hinglish</button>
-      </div>
-      <p class="q-text" id="qText">Which city is the capital of Australia?</p>
-      <p class="q-note">An LLM can answer the English version and miss the Hindi one, even though the fact is the same. Where does the knowledge get lost?</p>
+  <section class="block reveal" id="news">
+    <div class="label"><span class="n">01</span>News</div>
+    <div>
+      <h2>Recently</h2>
+      <ul class="news" id="newsList"></ul>
+      <button class="more" id="newsMore" hidden>Show all</button>
     </div>
-    <div class="q-right">
-      <div class="kicker">What IndicKLAR found · 9 open LLMs</div>
-      <div class="bars">
-        <div class="bar-row"><span class="lab">English</span><div class="bar-track"><div class="bar-fill" data-w="0"></div></div><span class="val">ref.</span></div>
-        <div class="bar-row cm"><span class="lab">Code-mixed</span><div class="bar-track"><div class="bar-fill" data-w="10"></div></div><span class="val">~0.05</span></div>
-        <div class="bar-row native"><span class="lab">Native script</span><div class="bar-track"><div class="bar-fill" data-w="100"></div></div><span class="val">≤0.50</span></div>
-      </div>
-      <p class="q-takeaway">Accuracy gap vs. English. Answers flip from wrong to right between native and code-mixed forms, so <b>the fact is stored but not reached</b>. <a href="#publications" data-theme-link="consistency">Read the paper →</a></p>
-    </div>
-  </div>
+  </section>
 
   <section class="block reveal" id="research">
-    <div class="label"><span class="n">01</span>Research</div>
+    <div class="label"><span class="n">02</span>Research</div>
     <div>
       <h2>Themes</h2>
       <div class="themes" id="themes"></div>
@@ -338,20 +284,11 @@ footer { border-top: 1px solid var(--rule); padding: 28px 0 48px; font-size: 13p
   </section>
 
   <section class="block reveal" id="publications">
-    <div class="label"><span class="n">02</span>Publications</div>
+    <div class="label"><span class="n">03</span>Publications</div>
     <div>
       <h2>Papers</h2>
       <div class="pub-tools" id="pubTools"></div>
       <div id="pubs"></div>
-    </div>
-  </section>
-
-  <section class="block reveal" id="news">
-    <div class="label"><span class="n">03</span>News</div>
-    <div>
-      <h2>Recently</h2>
-      <ul class="news" id="newsList"></ul>
-      <button class="more" id="newsMore" hidden>Show all</button>
     </div>
   </section>
 
@@ -408,25 +345,6 @@ footer { border-top: 1px solid var(--rule); padding: 28px 0 48px; font-size: 13p
     document.documentElement.dataset.theme = next;
     try { localStorage.setItem("theme", next); } catch (e) {}
   });
-
-  // ---- question tabs ----
-  const QS = [
-    { t: "Which city is the capital of Australia?", cls: "" },
-    { t: "ऑस्ट्रेलिया की राजधानी कौन सा शहर है?", cls: "hi" },
-    { t: "Australia ki capital kaunsa city hai?", cls: "" },
-  ];
-  const qText = $("#qText");
-  let qi = 0, qTimer;
-  const showQ = (i) => {
-    qi = i;
-    document.querySelectorAll(".q-tabs button").forEach((b, j) => b.setAttribute("aria-selected", j === i));
-    qText.style.opacity = 0;
-    setTimeout(() => { qText.textContent = QS[i].t; qText.className = "q-text " + QS[i].cls; qText.style.opacity = 1; }, 180);
-  };
-  document.querySelectorAll(".q-tabs button").forEach((b) =>
-    b.addEventListener("click", () => { clearInterval(qTimer); showQ(+b.dataset.q); }));
-  if (!matchMedia("(prefers-reduced-motion: reduce)").matches)
-    qTimer = setInterval(() => showQ((qi + 1) % QS.length), 3600);
 
   // ---- themes ----
   const counts = {};
@@ -540,7 +458,6 @@ footer { border-top: 1px solid var(--rule); padding: 28px 0 48px; font-size: 13p
   const io = new IntersectionObserver((es) => es.forEach((e) => {
     if (!e.isIntersecting) return;
     e.target.classList.add("in");
-    e.target.querySelectorAll(".bar-fill").forEach((f) => (f.style.width = f.dataset.w + "%"));
     io.unobserve(e.target);
   }), { threshold: 0.12 });
   document.querySelectorAll(".reveal").forEach((el) => io.observe(el));
@@ -549,7 +466,7 @@ footer { border-top: 1px solid var(--rule); padding: 28px 0 48px; font-size: 13p
   const spy = new IntersectionObserver((es) => es.forEach((e) => {
     if (e.isIntersecting) navLinks.forEach((a) => a.classList.toggle("active", a.getAttribute("href") === "#" + e.target.id));
   }), { rootMargin: "-40% 0px -55% 0px" });
-  document.querySelectorAll("section.block").forEach((s) => spy.observe(s));
+  document.querySelectorAll("section.hero, section.block").forEach((s) => spy.observe(s));
 })();
 </script>
 </body>
