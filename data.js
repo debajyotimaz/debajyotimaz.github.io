@@ -81,14 +81,14 @@ window.SITE = {
     },
   ],
 
-  // `date` is free text shown as-is. TODO: replace bare "2026" with the month where you know it.
+  // `date` is free text shown as-is. Keep newest first.
   news: [
+    { date: "Sep 2026", html: "<i>Entailed Opinion Matters</i> accepted to Findings of <b>AACL-IJCNLP 2026</b>." },
     { date: "Sep 2026", html: "Wrapped up my Research PhD internship at <b>Adobe</b>, building a next-question recommender for CXOs." },
-    { date: "2026", html: "Three papers at <b>EMNLP 2026</b> in Budapest: VeriSpeak (main), IndicKLAR and <i>Neither Here Nor There</i> (Findings). Attending with an ACM/IARCS travel grant and as a D&amp;I student volunteer." },
-    { date: "2026", html: "<i>Entailed Opinion Matters</i> accepted to Findings of <b>AACL-IJCNLP 2026</b>." },
-    { date: "2026", html: "Selected for the <b>Machine Learning Summer School</b>, MLSS NYC 2026 at Columbia University." },
-    { date: "2026", html: "Presented <i>Mind the Links</i> at <b>WSDM 2026</b> in Boise, supported by a SIGIR Student Travel Grant." },
-    { date: "2026", html: "Invited talk and poster at <b>ACM ARCS 2026</b>, IIT Hyderabad, on code-mixed humour and sarcasm detection." },
+    { date: "Aug 2026", html: "Three papers at <b>EMNLP 2026</b> in Budapest: VeriSpeak (main), IndicKLAR and <i>Neither Here Nor There</i> (Findings). Attending with an ACM/IARCS travel grant and as a D&amp;I student volunteer." },
+    { date: "Jun 2026", html: "Selected for the <b>Machine Learning Summer School</b>, MLSS NYC 2026 at Columbia University." },
+    { date: "Feb 2026", html: "Presented <i>Mind the Links</i> at <b>WSDM 2026</b> in Boise, supported by a SIGIR Student Travel Grant." },
+    { date: "Feb 2026", html: "Invited talk and poster at <b>ACM ARCS 2026</b>, IIT Hyderabad, on code-mixed humour and sarcasm detection." },
     { date: "Sep 2025", html: "Awarded the ANRF International Travel Scheme grant to present at <b>EMNLP 2025</b> in Suzhou, China." },
     { date: "Jul 2025", html: "Joined <b>NielsenIQ</b> as a Research Scientist intern, working on LLM reasoning with RL from verifiable rewards." },
     { date: "Mar 2025", html: "Code-mixed hate detection paper accepted to <b>ACM TALLIP</b>. Selected for the LiveRAG Challenge at SIGIR 2025." },
