@@ -27,7 +27,7 @@ window.SITE = {
       title: "Evaluating Cross-lingual Knowledge Consistency in Code-Mixed vis-à-vis Indian Languages using IndicKLAR",
       authors: ["D. Mazumder", "D. Pathak", "P. Kodali", "A. Joshi", "A. Agarwal", "J. Patro"],
       venue: "Findings of EMNLP 2026", venueFull: "Findings of EMNLP 2026", year: 2026,
-      theme: "consistency",
+      theme: ["codemixed", "consistency"],
       finding: "18 Indian languages, 11 code-mixed pairs, 9 open LLMs. Native-language accuracy trails English by up to ~0.50, while code-mixed queries land within ~0.05. Translate-in-Thought prompting adds +0.15 consistency.",
       links: { arXiv: "https://arxiv.org/abs/2605.29637" },
     },

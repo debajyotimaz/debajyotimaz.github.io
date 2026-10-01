@@ -347,7 +347,8 @@ footer { border-top: 1px solid var(--rule); padding: 28px 0 48px; font-size: 13p
 
   // ---- themes ----
   const counts = {};
-  S.publications.forEach((p) => (counts[p.theme] = (counts[p.theme] || 0) + 1));
+  const themesOf = (p) => [].concat(p.theme);  // a paper may list one theme or several
+  S.publications.forEach((p) => themesOf(p).forEach((k) => (counts[k] = (counts[k] || 0) + 1)));
   $("#themes").innerHTML = Object.entries(S.themes).map(([k, t]) => `
     <button class="theme" data-theme-link="${k}">
       <h3>${esc(t.label)}</h3>
@@ -376,7 +377,7 @@ footer { border-top: 1px solid var(--rule); padding: 28px 0 48px; font-size: 13p
   const renderPubs = () => {
     const list = S.publications
       .map((p, i) => ({ ...p, i }))
-      .filter((p) => (filter === "all" || p.theme === filter) && (!firstOnly || p.authors[0] === S.me));
+      .filter((p) => (filter === "all" || themesOf(p).includes(filter)) && (!firstOnly || p.authors[0] === S.me));
     if (!list.length) { $("#pubs").innerHTML = `<p class="empty">No papers match this filter.</p>`; return; }
     let html = "", yr = null;
     for (const p of list) {
