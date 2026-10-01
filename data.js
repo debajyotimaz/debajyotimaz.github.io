@@ -49,11 +49,11 @@ window.SITE = {
     },
     {
       title: "On VLMs for Diverse Tasks in Multimodal Meme Classification",
-      authors: ["D. Gavit", "D. Mazumder", "S. Das", "J. Patro"],
-      venue: "DHOW-MiLLA @ WebConf 2026", venueFull: "DHOW-MiLLA Workshop at The ACM Web Conference 2026", year: 2026,
+      authors: ["D. Gavit", "G. Kumar", "D. Mazumder", "S. Das", "J. Patro"],
+      venue: "DHOW-MiLLA @ WebConf 2026", venueFull: "Companion Proceedings of the ACM Web Conference 2026", year: 2026,
       theme: "other",
       finding: "A broad study of state-of-the-art vision-language models across meme classification tasks.",
-      links: { arXiv: "https://arxiv.org/abs/2505.20937" },
+      links: { Paper: "https://doi.org/10.1145/3774905.3796487", arXiv: "https://arxiv.org/abs/2505.20937" },
     },
     {
       title: "Mind the Links: Cross-Layer Attention for Link Prediction in Multiplex Networks",
