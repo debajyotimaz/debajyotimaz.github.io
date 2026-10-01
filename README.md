@@ -1,27 +1,10 @@
-# tsParticles Example
+# debajyotimaz.github.io
 
-This example shows a Next.js application using [React tsParticles](https://github.com/matteobruni/tsparticles/tree/main/components/react) package for creating beautiful particles animations.
+Personal academic site. Plain HTML/CSS/JS, no build step.
 
-Learn more about tsParticles [in the docs](https://particles.js.org/docs).
+- Content (papers, news, experience, honors, teaching): edit `data.js`
+- Layout and styles: `index.html`
+- CV: replace `resume.pdf`
 
-## Deploy your own
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-particles&project-name=with-particles&repository-name=with-particles)
-
-## How to use
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
-
-```bash
-npx create-next-app --example with-particles with-particles-app
-```
-
-```bash
-yarn create next-app --example with-particles with-particles-app
-```
-
-```bash
-pnpm create next-app -- --example with-particles with-particles-app
-```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+Pushing to `main` deploys via `.github/workflows/pages.yml`.
+The previous Next.js version is kept on the `legacy-nextjs` branch.
