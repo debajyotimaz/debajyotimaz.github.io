@@ -6,18 +6,19 @@
 window.SITE = {
   me: "D. Mazumder",
 
+  // Papers whose theme isn't listed here still appear under "All".
   themes: {
-    codemixed:   { label: "Code-mixed representations", blurb: "How multilingual models encode text that switches between languages mid-sentence, and how to align it with its parent languages." },
-    consistency: { label: "Cross-lingual knowledge",    blurb: "Whether a model that knows a fact in English still reaches it when asked in Hindi, Odia or Hinglish." },
-    factcheck:   { label: "Fact verification",          blurb: "Checking claims against evidence, in text and in speech, and making the reasoning behind a verdict explicit." },
-    other:       { label: "Graphs & multimodal",        blurb: "Collaborations on multiplex link prediction and vision-language models for memes." },
+    codemixed:   { label: "Code-mixing",             blurb: "How models handle text that switches between languages mid-sentence: hate, humour and sarcasm detection, and how code-mixed text relates to its parent languages." },
+    consistency: { label: "Cross-lingual Knowledge", blurb: "Whether a model that knows a fact in English still reaches it when asked in Hindi, Odia or Hinglish." },
+    factcheck:   { label: "Fact Verification",       blurb: "Checking claims against evidence, in text and in speech, and making the reasoning behind a verdict explicit." },
+    graphml:     { label: "GraphML",                 blurb: "Link prediction in multiplex networks with attention across graph layers." },
   },
 
   publications: [
     {
       title: "To Trust or Not to Trust: Retrieval-Augmented Fact Checking in Speech",
       authors: ["D. Mazumder", "Mamta", "A. Subramanyam"],
-      venue: "EMNLP 2026", venueFull: "Proceedings of EMNLP 2026", year: 2026, main: true,
+      venue: "EMNLP 2026", venueFull: "Proceedings of EMNLP 2026", year: 2026,
       theme: "factcheck",
       finding: "Introduces VeriSpeak, 3,879 spoken claims. Audio LLMs show a consistent text-to-speech gap in fact-checking; retrieval alone helps little, retrieval plus explicit reasoning helps substantially.",
       links: { arXiv: "https://arxiv.org/abs/2609.30227" },
@@ -57,8 +58,8 @@ window.SITE = {
     {
       title: "Mind the Links: Cross-Layer Attention for Link Prediction in Multiplex Networks",
       authors: ["D. Sharma", "A. Kishore", "A. Garg", "D. Mazumder", "D. Mohapatra", "J. Patro"],
-      venue: "WSDM 2026", venueFull: "Proceedings of ACM WSDM 2026", year: 2026, main: true,
-      theme: "other",
+      venue: "WSDM 2026", venueFull: "Proceedings of ACM WSDM 2026", year: 2026,
+      theme: "graphml",
       finding: "Poses link prediction on partially observed multiplex graphs and solves it with attention across layers.",
       links: { Paper: "https://dl.acm.org/doi/10.1145/3773966.3779365", arXiv: "https://arxiv.org/abs/2509.23409" },
     },
