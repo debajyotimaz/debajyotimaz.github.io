@@ -117,6 +117,7 @@ window.SITE = {
   ],
 
   teaching: [
+    ["Machine Learning with Graphs", "DSE423/623", "Fall 2026"],
     ["Natural Language Processing", "DSE318/401/607", "Spring 2026"],
     ["Introduction to Programming", "ECS102", "Spring 2025"],
     ["Natural Language Processing", "DSE407/607", "Fall 2024"],
