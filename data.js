@@ -111,8 +111,9 @@ window.SITE = {
     ["2026", "ACM Travel Grant, ARCS 2026 (invited talk)"],
     ["2025", "ANRF ITS Travel Grant, EMNLP 2025"],
     ["2025", "LiveRAG Challenge track, SIGIR 2025"],
+    ["2023", "Travel Grant, IndoML 2023, IIT Bombay"],
     ["2023", "2nd place, poster presentation, DSE Day, IISER Bhopal"],
-    ["2022–23", "Travel grants, IndoML 2022 & 2023"],
+    ["2022", "Travel Grant, IndoML 2022, IIT Gandhinagar"],
     ["2022", "MHRD Fellowship (GATE 2022)"],
   ],
 
