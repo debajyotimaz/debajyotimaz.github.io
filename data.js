@@ -94,12 +94,13 @@ window.SITE = {
     { date: "Mar 2025", html: "Code-mixed hate detection paper accepted to <b>ACM TALLIP</b>. Selected for the LiveRAG Challenge at SIGIR 2025." },
   ],
 
+  // kind: "work" or "edu". logo: file in assets/logos/.
   experience: [
-    { when: "Jul 2026 – Sep 2026", what: "Research PhD Intern", where: "Adobe", note: "Next-question recommendation for CXOs." },
-    { when: "Jul 2025 – Jan 2026", what: "Research Scientist, Sr. Intern", where: "NielsenIQ", note: "LLM reasoning with RLVR (GRPO variants after warm-up SFT) on e-commerce tasks." },
-    { when: "Aug 2022 – now", what: "Ph.D., Data Science & Engineering", where: "IISER Bhopal", note: "Advisor: Dr. Akash Anil. CPI 9.00." },
-    { when: "2018 – 2020", what: "M.Sc., Mathematics", where: "Zakir Husain Delhi College, University of Delhi", note: "" },
-    { when: "2015 – 2018", what: "B.Sc. (Hons.), Mathematics", where: "Deshbandhu College, University of Delhi", note: "" },
+    { kind: "work", org: "Adobe", logo: "adobe.png", role: "Research PhD Intern", when: "Jul 2026 – Sep 2026", note: "Next-question recommendation for CXOs." },
+    { kind: "work", org: "NielsenIQ", logo: "niq.png", role: "Research Scientist, Sr. Intern", when: "Jul 2025 – Jan 2026", note: "LLM reasoning with RLVR (GRPO variants after warm-up SFT) on e-commerce tasks." },
+    { kind: "edu", org: "IISER Bhopal", logo: "iiserb.png", role: "Ph.D., Data Science & Engineering", when: "Aug 2022 – present", note: "Advisor: Dr. Akash Anil. CPI 9.00." },
+    { kind: "edu", org: "University of Delhi", logo: "du.png", role: "M.Sc., Mathematics", when: "2018 – 2020", note: "Zakir Husain Delhi College" },
+    { kind: "edu", org: "University of Delhi", logo: "du.png", role: "B.Sc. (Hons.), Mathematics", when: "2015 – 2018", note: "Deshbandhu College" },
   ],
 
   honors: [

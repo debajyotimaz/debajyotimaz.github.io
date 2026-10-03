@@ -167,16 +167,23 @@ h3 { font-family: var(--serif); font-weight: 500; font-size: 20px; margin: 0 0 6
 .news li.hidden { display: none; }
 .more { margin-top: 14px; background: none; border: 0; padding: 0; font: 500 14px var(--sans); color: var(--accent); cursor: pointer; }
 
-/* timeline */
-.tl { list-style: none; margin: 0; padding: 0; position: relative; }
-.tl::before { content: ""; position: absolute; left: 5px; top: 8px; bottom: 8px; width: 1px; background: var(--rule); }
-.tl li { position: relative; padding: 0 0 22px 30px; }
-.tl li::before { content: ""; position: absolute; left: 0; top: 8px; width: 11px; height: 11px; border-radius: 50%; background: var(--bg); border: 2px solid var(--ink-2); }
-.tl li.work::before { border-color: var(--warm); background: var(--warm); }
-.tl .when { font-family: var(--mono); font-size: 12px; color: var(--muted); }
-.tl .what { font-weight: 600; }
-.tl .where { color: var(--ink-2); }
-.tl .note { font-size: 14px; color: var(--ink-2); }
+/* experience */
+.exp-group + .exp-group { margin-top: 30px; }
+.exp-grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.exp {
+  display: flex; gap: 14px; align-items: flex-start; padding: 14px 16px;
+  border: 1px solid var(--rule); border-radius: 10px; background: var(--surface);
+}
+.exp img {
+  width: 40px; height: 40px; flex-shrink: 0; object-fit: contain; border-radius: 8px;
+  background: #fff; padding: 3px; border: 1px solid var(--rule);
+}
+.exp-body { flex: 1; min-width: 0; }
+.exp-head { display: flex; align-items: baseline; gap: 10px; }
+.exp-org { font-weight: 600; color: var(--ink); }
+.exp-when { margin-left: auto; font-family: var(--mono); font-size: 11.5px; color: var(--muted); white-space: nowrap; }
+.exp-role { font-size: 14.5px; color: var(--ink); }
+.exp-note { font-size: 13.5px; color: var(--ink-2); margin-top: 2px; }
 
 /* two-col lists */
 .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
@@ -206,7 +213,7 @@ footer { border-top: 1px solid var(--rule); padding: 28px 0 48px; font-size: 13p
   .hero { grid-template-columns: 1fr; gap: 28px; padding-top: 40px; }
   .portrait { width: 132px; order: -1; }
   section.block { grid-template-columns: 1fr; gap: 12px; padding: 44px 0; }
-  .themes, .cols { grid-template-columns: 1fr; }
+  .themes, .cols, .exp-grid { grid-template-columns: 1fr; }
   .toggle { margin-left: 0; }
 }
 @media (max-width: 520px) {
@@ -234,9 +241,9 @@ footer { border-top: 1px solid var(--rule); padding: 28px 0 48px; font-size: 13p
     <nav class="nav" aria-label="Sections">
       <a href="#about">About</a>
       <a href="#news">News</a>
+      <a href="#experience">Experience</a>
       <a href="#research">Research</a>
       <a href="#publications">Publications</a>
-      <a href="#experience">Experience</a>
       <a href="#more">Teaching &amp; Service</a>
     </nav>
     <button class="iconbtn" id="themeBtn" aria-label="Toggle dark mode" title="Toggle dark mode">
@@ -274,8 +281,23 @@ footer { border-top: 1px solid var(--rule); padding: 28px 0 48px; font-size: 13p
     </div>
   </section>
 
+  <section class="block reveal" id="experience">
+    <div class="label"><span class="n">02</span>Experience</div>
+    <div>
+      <h2>Experience</h2>
+      <div class="exp-group">
+        <p class="sub">Industry</p>
+        <ul class="exp-grid" id="expWork"></ul>
+      </div>
+      <div class="exp-group">
+        <p class="sub">Education</p>
+        <ul class="exp-grid" id="expEdu"></ul>
+      </div>
+    </div>
+  </section>
+
   <section class="block reveal" id="research">
-    <div class="label"><span class="n">02</span>Research</div>
+    <div class="label"><span class="n">03</span>Research</div>
     <div>
       <h2>Themes</h2>
       <div class="themes" id="themes"></div>
@@ -283,19 +305,11 @@ footer { border-top: 1px solid var(--rule); padding: 28px 0 48px; font-size: 13p
   </section>
 
   <section class="block reveal" id="publications">
-    <div class="label"><span class="n">03</span>Publications</div>
+    <div class="label"><span class="n">04</span>Publications</div>
     <div>
       <h2>Papers</h2>
       <div class="pub-tools" id="pubTools"></div>
       <div id="pubs"></div>
-    </div>
-  </section>
-
-  <section class="block reveal" id="experience">
-    <div class="label"><span class="n">04</span>Experience</div>
-    <div>
-      <h2>Industry &amp; education</h2>
-      <ul class="tl" id="timeline"></ul>
     </div>
   </section>
 
@@ -436,13 +450,18 @@ footer { border-top: 1px solid var(--rule); padding: 28px 0 48px; font-size: 13p
     });
   }
 
-  // ---- timeline ----
-  $("#timeline").innerHTML = S.experience.map((x) => `
-    <li class="${/Ph\.D|M\.Sc|B\.Sc/.test(x.what) ? "" : "work"}">
-      <div class="when">${esc(x.when)}</div>
-      <div><span class="what">${esc(x.what)}</span> · <span class="where">${esc(x.where)}</span></div>
-      ${x.note ? `<div class="note">${esc(x.note)}</div>` : ""}
-    </li>`).join("");
+  // ---- experience ----
+  const expItem = (x) => `
+    <li class="exp">
+      <img src="assets/logos/${esc(x.logo)}" alt="${esc(x.org)} logo" width="40" height="40" loading="lazy">
+      <div class="exp-body">
+        <div class="exp-head"><span class="exp-org">${esc(x.org)}</span><span class="exp-when">${esc(x.when)}</span></div>
+        <div class="exp-role">${esc(x.role)}</div>
+        ${x.note ? `<div class="exp-note">${esc(x.note)}</div>` : ""}
+      </div>
+    </li>`;
+  $("#expWork").innerHTML = S.experience.filter((x) => x.kind === "work").map(expItem).join("");
+  $("#expEdu").innerHTML = S.experience.filter((x) => x.kind === "edu").map(expItem).join("");
 
   // ---- teaching, service, honors ----
   $("#teaching").innerHTML = S.teaching.map(([c, code, term]) =>
