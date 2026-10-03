@@ -184,6 +184,7 @@ h3 { font-family: var(--serif); font-weight: 500; font-size: 20px; margin: 0 0 6
 .list { list-style: none; margin: 0; padding: 0; font-size: 14.5px; }
 .list li { display: grid; grid-template-columns: 64px 1fr; gap: 12px; padding: 7px 0; border-bottom: 1px dashed var(--rule); color: var(--ink-2); }
 .list li:last-child { border-bottom: 0; }
+.list.terms li { grid-template-columns: 112px 1fr; }
 .list .y { font-family: var(--mono); font-size: 12px; color: var(--muted); padding-top: 2px; }
 .sub { font-family: var(--mono); font-size: 11px; text-transform: uppercase; letter-spacing: .12em; color: var(--muted); margin: 0 0 10px; }
 .plain { margin: 0; padding-left: 18px; color: var(--ink-2); font-size: 14.5px; }
@@ -314,7 +315,7 @@ footer { border-top: 1px solid var(--rule); padding: 28px 0 48px; font-size: 13p
       <div class="cols">
         <div>
           <p class="sub">Teaching assistant · IISER Bhopal</p>
-          <ul class="list" id="teaching"></ul>
+          <ul class="list terms" id="teaching"></ul>
           <p class="sub" style="margin-top:28px">Service</p>
           <ul class="plain" id="service"></ul>
         </div>
@@ -327,7 +328,7 @@ footer { border-top: 1px solid var(--rule); padding: 28px 0 48px; font-size: 13p
   </section>
 
   <footer>
-    <span>© <span id="yr"></span> Debajyoti Mazumder · IISER Bhopal, India</span>
+    <span>© <span id="yr"></span> Debajyoti Mazumder</span>
     <span>debajyoti22 [at] iiserb.ac.in</span>
   </footer>
 </main>
@@ -336,7 +337,7 @@ footer { border-top: 1px solid var(--rule); padding: 28px 0 48px; font-size: 13p
 
 <noscript><p class="wrap">Publication list needs JavaScript. See the <a href="resume.pdf">resume</a> or <a href="https://scholar.google.com/citations?user=gGRVwn8AAAAJ">Google Scholar</a>.</p></noscript>
 
-<script src="data.js?v=202610031117"></script>
+<script src="data.js?v=202610031124"></script>
 <script>
 (() => {
   const S = window.SITE;
@@ -459,7 +460,7 @@ footer { border-top: 1px solid var(--rule); padding: 28px 0 48px; font-size: 13p
 
   // ---- teaching, service, honors ----
   $("#teaching").innerHTML = S.teaching.map(([c, code, term]) =>
-    `<li><span class="y">${esc(term.replace(/ (\d{4})/, " $1").replace("Spring", "Spr").replace("Fall", "Fall"))}</span><span>${esc(c)} <span style="color:var(--muted)">· ${esc(code)}</span></span></li>`).join("");
+    `<li><span class="y">${esc(term)}</span><span>${esc(c)} <span style="color:var(--muted)">· ${esc(code)}</span></span></li>`).join("");
   $("#service").innerHTML = S.service.map((s) => `<li>${esc(s)}</li>`).join("");
   $("#honors").innerHTML = S.honors.map(([y, h]) => `<li><span class="y">${esc(y)}</span><span>${esc(h)}</span></li>`).join("");
   $("#yr").textContent = new Date().getFullYear();

@@ -117,13 +117,13 @@ window.SITE = {
   ],
 
   teaching: [
-    ["Machine Learning with Graphs", "DSE423/623", "Fall 2026"],
-    ["Natural Language Processing", "DSE318/401/607", "Spring 2026"],
-    ["Introduction to Programming", "ECS102", "Spring 2025"],
-    ["Natural Language Processing", "DSE407/607", "Fall 2024"],
-    ["Introduction to Programming", "ECS102", "Spring 2024"],
-    ["Natural Language Processing", "DSE407/607", "Fall 2023"],
-    ["Applied Optimization", "DSE311", "Spring 2023"],
+    ["Machine Learning with Graphs", "DSE423/623", "Aug – Nov 2026"],
+    ["Natural Language Processing", "DSE318/401/607", "Jan – Apr 2026"],
+    ["Introduction to Programming", "ECS102", "Jan – Apr 2025"],
+    ["Natural Language Processing", "DSE407/607", "Aug – Nov 2024"],
+    ["Introduction to Programming", "ECS102", "Jan – Apr 2024"],
+    ["Natural Language Processing", "DSE407/607", "Aug – Nov 2023"],
+    ["Applied Optimization", "DSE311", "Jan – Apr 2023"],
   ],
 
   service: [
