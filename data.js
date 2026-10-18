@@ -16,6 +16,14 @@ window.SITE = {
 
   publications: [
     {
+      title: "Entailed Opinion Matters: Improving the Fact-Checking Performance of Language Models by Relying on their Entailment Ability",
+      authors: ["G. Kumar", "A. Garg", "D. Mazumder", "A. Kishore", "B. Kumar", "J. Patro"],
+      venue: "Findings of AACL-IJCNLP 2026", venueFull: "Findings of AACL-IJCNLP 2026", year: 2026,
+      theme: "factcheck",
+      finding: "LLMs label each piece of evidence as supporting or refuting and justify it; verdict models trained on those justifications improve macro-F1 across seven benchmarks, including multilingual and multimodal ones.",
+      links: { arXiv: "https://arxiv.org/abs/2505.15050" },
+    },
+    {
       title: "To Trust or Not to Trust: Retrieval-Augmented Fact Checking in Speech",
       authors: ["D. Mazumder", "Mamta", "A. Subramanyam"],
       venue: "EMNLP 2026", venueFull: "Proceedings of EMNLP 2026", year: 2026,
@@ -38,14 +46,6 @@ window.SITE = {
       theme: "codemixed",
       finding: "Code-mixed text sits loosely between both parent languages and is processed mostly through an English-dominant subspace. An interpretability-motivated alignment objective lifts mBERT's cross-lingual alignment from 14.2 to 51.0.",
       links: { arXiv: "https://arxiv.org/abs/2603.19771" },
-    },
-    {
-      title: "Entailed Opinion Matters: Improving the Fact-Checking Performance of Language Models by Relying on their Entailment Ability",
-      authors: ["G. Kumar", "A. Garg", "D. Mazumder", "A. Kishore", "B. Kumar", "J. Patro"],
-      venue: "Findings of AACL-IJCNLP 2026", venueFull: "Findings of AACL-IJCNLP 2026", year: 2026,
-      theme: "factcheck",
-      finding: "LLMs label each piece of evidence as supporting or refuting and justify it; verdict models trained on those justifications improve macro-F1 across seven benchmarks, including multilingual and multimodal ones.",
-      links: { arXiv: "https://arxiv.org/abs/2505.15050" },
     },
     {
       title: "On VLMs for Diverse Tasks in Multimodal Meme Classification",
