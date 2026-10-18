@@ -83,6 +83,7 @@ window.SITE = {
 
   // `date` is free text shown as-is. Keep newest first.
   news: [
+    { date: "Oct 2026", html: "<i>VeriSpeak</i> (<i>To Trust or Not to Trust</i>) nominated for an award at <b>EMNLP 2026</b>." },
     { date: "Sep 2026", html: "<i>Entailed Opinion Matters</i> accepted to Findings of <b>AACL-IJCNLP 2026</b>." },
     { date: "Sep 2026", html: "Wrapped up my Research PhD internship at <b>Adobe</b>, building a next-question recommender (RecSys) for a B2B conversational setting." },
     { date: "Aug 2026", html: "Three papers at <b>EMNLP 2026</b> in Budapest: VeriSpeak (main), IndicKLAR and <i>Neither Here Nor There</i> (Findings). Attending with an ACM/IARCS travel grant and as a D&amp;I student volunteer." },
