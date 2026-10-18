@@ -86,7 +86,7 @@ window.SITE = {
     { date: "Sep 2026", html: "<i>Entailed Opinion Matters</i> accepted to Findings of <b>AACL-IJCNLP 2026</b>." },
     { date: "Sep 2026", html: "Wrapped up my Research PhD internship at <b>Adobe</b>, building a next-question recommender (RecSys) for a B2B conversational setting." },
     { date: "Aug 2026", html: "<i>VeriSpeak</i> (<i>To Trust or Not to Trust</i>) nominated for an award at <b>EMNLP 2026</b>." },
-    { date: "Aug 2026", html: "Three papers at <b>EMNLP 2026</b> in Budapest: VeriSpeak (main), IndicKLAR (Findings) and <i>Neither Here Nor There</i> (Findings). Attending with an ACM/IARCS travel grant and as a D&amp;I student volunteer." },
+    { date: "Aug 2026", html: "Three papers at <b>EMNLP 2026</b> in Budapest: VeriSpeak (Main), IndicKLAR (Findings) and <i>Neither Here Nor There</i> (Findings). Attending with an ACM/IARCS travel grant and as a D&amp;I student volunteer." },
     { date: "Jun 2026", html: "Selected for the <b>Machine Learning Summer School</b>, MLSS NYC 2026 at Columbia University." },
     { date: "Feb 2026", html: "Presented <i>Mind the Links</i> at <b>WSDM 2026</b> in Boise, supported by a SIGIR Student Travel Grant." },
     { date: "Feb 2026", html: "Invited talk and poster at <b>ACM ARCS 2026</b>, IIT Hyderabad, on code-mixed humour and sarcasm detection." },
