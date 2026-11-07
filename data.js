@@ -16,6 +16,14 @@ window.SITE = {
 
   publications: [
     {
+      title: "A Two-Way Street: Surveying the Interplay between Code-Mixing and Native Languages in Text and Speech",
+      authors: ["D. Mazumder", "A. Anil"],
+      venue: "arXiv 2026", venueFull: "arXiv preprint", year: 2026,
+      theme: "codemixed",
+      finding: "A survey that organizes transfer work in both directions, native to code-mixed and the reverse, by direction, route and modality. On a shared speech benchmark, native data helps more than new architectures.",
+      links: { arXiv: "https://arxiv.org/abs/2610.27631" },
+    },
+    {
       title: "Entailed Opinion Matters: Improving the Fact-Checking Performance of Language Models by Relying on their Entailment Ability",
       authors: ["G. Kumar", "A. Garg", "D. Mazumder", "A. Kishore", "B. Kumar", "J. Patro"],
       venue: "Findings of AACL-IJCNLP 2026", venueFull: "Findings of AACL-IJCNLP 2026", year: 2026,
@@ -29,7 +37,7 @@ window.SITE = {
       venue: "EMNLP 2026", venueFull: "Proceedings of EMNLP 2026", year: 2026,
       theme: "factcheck",
       finding: "Introduces VeriSpeak, 3,879 spoken claims. Audio LLMs show a consistent text-to-speech gap in fact-checking; retrieval alone helps little, retrieval plus explicit reasoning helps substantially.",
-      links: { arXiv: "https://arxiv.org/abs/2609.30227" },
+      links: { Paper: "https://aclanthology.org/2026.emnlp-main.2534/", arXiv: "https://arxiv.org/abs/2609.30227" },
     },
     {
       title: "Evaluating Cross-lingual Knowledge Consistency in Code-Mixed vis-à-vis Indian Languages using IndicKLAR",
@@ -37,15 +45,15 @@ window.SITE = {
       venue: "Findings of EMNLP 2026", venueFull: "Findings of EMNLP 2026", year: 2026,
       theme: ["codemixed", "consistency"],
       finding: "18 Indian languages, 11 code-mixed pairs, 9 open LLMs. Native-language accuracy trails English by up to ~0.50, while code-mixed queries land within ~0.05. Translate-in-Thought prompting adds +0.15 consistency.",
-      links: { arXiv: "https://arxiv.org/abs/2605.29637" },
+      links: { Paper: "https://aclanthology.org/2026.findings-emnlp.1655/", arXiv: "https://arxiv.org/abs/2605.29637" },
     },
     {
-      title: "Neither Here Nor There: Cross-Lingual Representation Dynamics of Code-Mixed Text in Multilingual Encoders",
+      title: "Neither Here Nor There: Cross-Lingual Representation Dynamics of Code-Mixed Text — A Hindi–English Case Study",
       authors: ["D. Mazumder", "D. Pathak", "P. Kodali", "J. Patro"],
       venue: "Findings of EMNLP 2026", venueFull: "Findings of EMNLP 2026", year: 2026,
       theme: "codemixed",
       finding: "Code-mixed text sits loosely between both parent languages and is processed mostly through an English-dominant subspace. An interpretability-motivated alignment objective lifts mBERT's cross-lingual alignment from 14.2 to 51.0.",
-      links: { arXiv: "https://arxiv.org/abs/2603.19771" },
+      links: { Paper: "https://aclanthology.org/2026.findings-emnlp.1748/", arXiv: "https://arxiv.org/abs/2603.19771" },
     },
     {
       title: "On VLMs for Diverse Tasks in Multimodal Meme Classification",
@@ -85,7 +93,7 @@ window.SITE = {
   news: [
     { date: "Sep 2026", html: "<i>Entailed Opinion Matters</i> accepted to Findings of <b>AACL-IJCNLP 2026</b>." },
     { date: "Sep 2026", html: "Wrapped up my Research PhD internship at <b>Adobe</b>, building a next-question recommender (RecSys) for a B2B conversational setting." },
-    { date: "Aug 2026", html: "<i>VeriSpeak</i> (<i>To Trust or Not to Trust</i>) nominated for an award at <b>EMNLP 2026</b>." },
+    { date: "Aug 2026", html: "<i>VeriSpeak</i> (<i>To Trust or Not to Trust</i>) nominated for the <b>Best Paper Award</b> at <b>EMNLP 2026</b>." },
     { date: "Aug 2026", html: "Three papers at <b>EMNLP 2026</b> in Budapest: VeriSpeak (Main), IndicKLAR (Findings) and <i>Neither Here Nor There</i> (Findings). Attending with an ACM/IARCS travel grant and as a D&amp;I student volunteer." },
     { date: "Jun 2026", html: "Selected for the <b>Machine Learning Summer School</b>, MLSS NYC 2026 at Columbia University." },
     { date: "Feb 2026", html: "Presented <i>Mind the Links</i> at <b>WSDM 2026</b> in Boise, supported by a SIGIR Student Travel Grant." },
@@ -105,6 +113,7 @@ window.SITE = {
   ],
 
   honors: [
+    ["2026", "Best Paper Award Nominee, EMNLP 2026 (VeriSpeak)"],
     ["2026", "ACM/IARCS Travel Grant"],
     ["2026", "EMNLP D&I Student Volunteer"],
     ["2026", "MLSS NYC 2026, Columbia University"],
@@ -129,7 +138,7 @@ window.SITE = {
   ],
 
   service: [
-    "Reviewer: The ACM Web Conference 2026, 2027 · ICWSM 2026 · IEEE Transactions on Multimedia · LT-EDI 2026 · DravidianLangTech 2026 · INSTCon 2026",
+    "Reviewer: ACL Rolling Review (ARR) Oct 2026 · The ACM Web Conference 2026, 2027 · ICWSM 2026 · IEEE Transactions on Multimedia · LT-EDI 2026 · DravidianLangTech 2026 · INSTCon 2026",
     "Student volunteer, Diversity & Inclusion, EMNLP 2026",
   ],
 };
