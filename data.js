@@ -29,7 +29,7 @@ window.SITE = {
       venue: "Findings of AACL-IJCNLP 2026", venueFull: "Findings of AACL-IJCNLP 2026", year: 2026,
       theme: "factcheck",
       finding: "LLMs label each piece of evidence as supporting or refuting and justify it; verdict models trained on those justifications improve macro-F1 across seven benchmarks, including multilingual and multimodal ones.",
-      links: { arXiv: "https://arxiv.org/abs/2505.15050" },
+      links: { Paper: "https://aclanthology.org/2026.findings-aacl.172/" },
     },
     {
       title: "To Trust or Not to Trust: Retrieval-Augmented Fact Checking in Speech",
