@@ -13,6 +13,10 @@ permissions:
   contents: write
   actions: write
 
+concurrency:
+  group: sync-cv
+  cancel-in-progress: false
+
 jobs:
   sync:
     runs-on: ubuntu-latest
@@ -37,6 +41,7 @@ jobs:
           git add cv.pdf
           if git diff --cached --quiet; then echo "cv.pdf unchanged"; exit 0; fi
           git commit -m "Sync cv.pdf from resume_job_appl"
+          git pull --rebase
           git push
           gh workflow run pages.yml
         env:
