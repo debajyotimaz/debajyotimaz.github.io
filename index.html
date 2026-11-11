@@ -110,7 +110,6 @@ b, strong { font-weight: 600; }
   transition: border-color .15s, transform .15s;
 }
 .links a:hover { border-color: var(--ink-2); text-decoration: none; transform: translateY(-1px); }
-.links a.primary { background: var(--ink); color: var(--bg); border-color: var(--ink); }
 .links svg { width: 15px; height: 15px; }
 .email { position: relative; }
 .email summary {
@@ -231,7 +230,7 @@ footer { border-top: 1px solid var(--rule); padding: 28px 0 48px; font-size: 13p
 .toast.show { opacity: 1; transform: translate(-50%, 0); }
 
 @media (max-width: 860px) {
-  .nav { display: none; }
+  .nav a:not(.cv) { display: none; }
   .top .iconbtn { margin-left: auto; }
   .hero { grid-template-columns: 1fr; gap: 28px; padding-top: 40px; }
   .portrait { width: 132px; order: -1; }
@@ -269,6 +268,7 @@ footer { border-top: 1px solid var(--rule); padding: 28px 0 48px; font-size: 13p
       <a href="#research">Research</a>
       <a href="#publications">Publications</a>
       <a href="#more">Teaching &amp; Service</a>
+      <a class="cv" href="cv.pdf">CV</a>
     </nav>
     <button class="iconbtn" id="themeBtn" aria-label="Toggle dark mode" title="Toggle dark mode">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
@@ -296,7 +296,6 @@ footer { border-top: 1px solid var(--rule); padding: 28px 0 48px; font-size: 13p
       <p class="bio">I'm a Ph.D. scholar in Data Science and Engineering at IISER Bhopal, advised by Dr. Akash Anil. My Ph.D. focuses on the synergy between the code-mixed setting and its constituent native languages.</p>
       <p class="bio">I have published in transactions such as ACM TALLIP, conferences such as EMNLP, WSDM and AACL-IJCNLP, and workshops including DHOW-MiLLA@TheWebConf. My industry experience spans LLM reasoning and reinforcement learning at NielsenIQ, and recommender systems at Adobe.</p>
       <div class="links">
-        <a class="primary" href="cv.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/></svg>CV</a>
         <details class="email">
           <summary><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-9 5.7a2 2 0 0 1-2 0L2 7"/></svg>Email<svg class="caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></summary>
           <div class="menu">
