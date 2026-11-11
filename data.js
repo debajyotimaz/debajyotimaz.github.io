@@ -92,7 +92,7 @@ window.SITE = {
   // `date` is free text shown as-is. Keep newest first.
   news: [
     { date: "Sep 2026", html: "<i>Entailed Opinion Matters</i> accepted to Findings of <b>AACL-IJCNLP 2026</b>." },
-    { date: "Sep 2026", html: "Wrapped up my Research PhD internship at <b>Adobe</b>, building a next-question recommender (RecSys) for a B2B conversational setting." },
+    { date: "Sep 2026", html: "Wrapped up my Research PhD internship at <b>Adobe</b>, building a next-question recommender (RecSys) for a B2B conversational system backed by consumer-level aggregated tabular data." },
     { date: "Aug 2026", html: "<i>VeriSpeak</i> (<i>To Trust or Not to Trust</i>) nominated for the <b>Best Paper Award</b> at <b>EMNLP 2026</b>." },
     { date: "Aug 2026", html: "Three papers at <b>EMNLP 2026</b> in Budapest: VeriSpeak (Main), IndicKLAR (Findings) and <i>Neither Here Nor There</i> (Findings). Attending with an ACM/IARCS travel grant and as a D&amp;I student volunteer." },
     { date: "Jun 2026", html: "Selected for the <b>Machine Learning Summer School</b>, MLSS NYC 2026 at Columbia University." },
@@ -105,7 +105,7 @@ window.SITE = {
 
   // kind: "work" or "edu". logo: file in assets/logos/.
   experience: [
-    { kind: "work", org: "Adobe", logo: "adobe.png", role: "Research PhD Intern", when: "Jul 2026 – Sep 2026", note: "Next-question recommender (RecSys) for B2B conversational setting." },
+    { kind: "work", org: "Adobe", logo: "adobe.png", role: "Research PhD Intern", when: "Jul 2026 – Sep 2026", note: "Next-question recommender (RecSys) for a B2B conversational system, backed by consumer-level aggregated tabular data." },
     { kind: "work", org: "NielsenIQ", logo: "niq.png", role: "Research Scientist, Sr. Intern", when: "Jul 2025 – Jan 2026", note: "LLM reasoning with RLVR (GRPO variants after warm-up SFT) on e-commerce tasks." },
     { kind: "edu", org: "IISER Bhopal", logo: "iiserb.png", role: "Ph.D., Data Science & Engineering", when: "Aug 2022 – present", note: "Advisor: Dr. Akash Anil." },
     { kind: "edu", org: "University of Delhi", logo: "du.png", role: "M.Sc., Mathematics", when: "2018 – 2020", note: "Zakir Husain Delhi College" },
