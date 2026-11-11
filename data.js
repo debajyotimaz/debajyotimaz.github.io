@@ -141,7 +141,7 @@ window.SITE = {
     ["Conferences", "ACL Rolling Review (ARR) Oct 2026 · The ACM Web Conference 2026, 2027 · ICWSM 2026 · INSTCon 2026"],
     ["Workshops", "LT-EDI 2026 · DravidianLangTech 2026"],
     ["Journals", "IEEE Transactions on Multimedia"],
-    ["Ethics review", "Nominated Ethics Reviewer, ACL Rolling Review (ARR) Oct 2026"],
+    ["Ethics review", "ACL Rolling Review (ARR) Oct 2026"],
   ],
 
   service: [
