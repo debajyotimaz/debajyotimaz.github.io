@@ -45,7 +45,7 @@ window.SITE = {
       venue: "Findings of EMNLP 2026", venueFull: "Findings of EMNLP 2026", year: 2026,
       theme: ["codemixed", "consistency"],
       finding: "18 Indian languages, 11 code-mixed pairs, 9 open LLMs. Native-language accuracy trails English by up to ~0.50, while code-mixed queries land within ~0.05. Translate-in-Thought prompting adds +0.15 consistency.",
-      links: { Paper: "https://aclanthology.org/2026.findings-emnlp.1655/", arXiv: "https://arxiv.org/abs/2605.29637" },
+      links: { Paper: "https://aclanthology.org/2026.findings-emnlp.1655/", arXiv: "https://arxiv.org/abs/2605.29637", "Project Page": "https://debajyotimaz.github.io/IndicKLAR_EMNLP_2026/" },
     },
     {
       title: "Neither Here Nor There: Cross-Lingual Representation Dynamics of Code-Mixed Text — A Hindi–English Case Study",
@@ -53,7 +53,7 @@ window.SITE = {
       venue: "Findings of EMNLP 2026", venueFull: "Findings of EMNLP 2026", year: 2026,
       theme: "codemixed",
       finding: "Code-mixed text sits loosely between both parent languages and is processed mostly through an English-dominant subspace. An interpretability-motivated alignment objective lifts mBERT's cross-lingual alignment from 14.2 to 51.0.",
-      links: { Paper: "https://aclanthology.org/2026.findings-emnlp.1748/", arXiv: "https://arxiv.org/abs/2603.19771" },
+      links: { Paper: "https://aclanthology.org/2026.findings-emnlp.1748/", arXiv: "https://arxiv.org/abs/2603.19771", "Project Page": "https://debajyotimaz.github.io/tri_align_EMNLP_2026/" },
     },
     {
       title: "On VLMs for Diverse Tasks in Multimodal Meme Classification",
