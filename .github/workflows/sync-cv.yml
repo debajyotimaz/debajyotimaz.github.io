@@ -1,0 +1,43 @@
+name: Sync CV
+
+# Rebuilds cv.pdf from cv.tex in debajyotimaz/resume_job_appl (private).
+# Needs the secret CV_REPO_TOKEN: a fine-grained PAT with read access to that repo.
+on:
+  repository_dispatch:
+    types: [cv-updated]
+  schedule:
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: debajyotimaz/resume_job_appl
+          token: ${{ secrets.CV_REPO_TOKEN }}
+          path: cv-src
+      - uses: xu-cheng/latex-action@v3
+        with:
+          root_file: cv.tex
+          working_directory: cv-src
+          latexmk_use_xelatex: true
+      - name: Commit cv.pdf if changed
+        run: |
+          cp cv-src/cv.pdf cv.pdf
+          rm -rf cv-src
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add cv.pdf
+          if git diff --cached --quiet; then echo "cv.pdf unchanged"; exit 0; fi
+          git commit -m "Sync cv.pdf from resume_job_appl"
+          git push
+          gh workflow run pages.yml
+        env:
+          GH_TOKEN: ${{ github.token }}
