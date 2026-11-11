@@ -139,6 +139,7 @@ window.SITE = {
 
   service: [
     "Reviewer: ACL Rolling Review (ARR) Oct 2026 · The ACM Web Conference 2026, 2027 · ICWSM 2026 · IEEE Transactions on Multimedia · LT-EDI 2026 · DravidianLangTech 2026 · INSTCon 2026",
+    "Nominated Ethics Reviewer: ACL Rolling Review (ARR) Oct 2026",
     "Student volunteer, Diversity & Inclusion, EMNLP 2026",
   ],
 };
