@@ -360,6 +360,8 @@ footer { border-top: 1px solid var(--rule); padding: 28px 0 48px; font-size: 13p
         <div>
           <p class="sub">Teaching assistant · IISER Bhopal</p>
           <ul class="list terms" id="teaching"></ul>
+          <p class="sub" style="margin-top:28px">Reviewing</p>
+          <ul class="plain" id="reviewing"></ul>
           <p class="sub" style="margin-top:28px">Service</p>
           <ul class="plain" id="service"></ul>
         </div>
@@ -512,6 +514,7 @@ footer { border-top: 1px solid var(--rule); padding: 28px 0 48px; font-size: 13p
   // ---- teaching, service, honors ----
   $("#teaching").innerHTML = S.teaching.map(([c, code, term]) =>
     `<li><span class="y">${esc(term)}</span><span>${esc(c)} <span style="color:var(--muted)">· ${esc(code)}</span></span></li>`).join("");
+  $("#reviewing").innerHTML = S.reviewing.map(([k, v]) => `<li><b>${esc(k)}:</b> ${esc(v)}</li>`).join("");
   $("#service").innerHTML = S.service.map((s) => `<li>${esc(s)}</li>`).join("");
   $("#honors").innerHTML = S.honors.map(([y, h]) => `<li><span class="y">${esc(y)}</span><span>${esc(h)}</span></li>`).join("");
   $("#yr").textContent = new Date().getFullYear();
